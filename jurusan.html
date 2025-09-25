@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurusan Sekolah</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="responsif.css">
+
+    <!-- Tailwind CSS tambahan untuk responsif -->
+<style>
+@media (max-width: 768px) {
+    .hero-container { 
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+}
+</style>
 
        <script>
   tailwind.config = {
@@ -40,27 +51,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-white font-sans">
-       <!-- Navigation -->
+<!-- Navigation -->
 <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-6 py-3">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
     <!-- Logo -->
     <div class="flex items-center space-x-3">
-      <div class="flex items-center justify-center">
-        <img src="assets/image/logo.PNG" alt="logo" class="w-10 h-10 object-contain">
+      <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
+      <div class="flex flex-col leading-tight">
+        <span class="font-black text-[#117554] text-2xl tracking-wide">SMKN</span>
+        <span class="font-light text-[#117554] text-sm">Juara Negeri</span>
       </div>
-    <div class="flex flex-col leading-tight">
-  <span class="font-black text-[#117554] text-2xl tracking-wide">
-    SMKN
-  </span>
-  <span class="font-light text-[#117554] text-sm">
-    Juara Negeri
-  </span>
-</div>
-
-
     </div>
 
-    <!-- Menu -->
+    <!-- Menu Desktop -->
     <div class="hidden md:flex items-center space-x-8">
       <a href="index.html" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Beranda</a>
       <a href="#about" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Tentang Kami</a>
@@ -70,168 +73,239 @@
       <a href="#" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">E-Learning</a>
     </div>
 
-    <!-- Tombol -->
-    <div class="flex items-center space-x-3">
-      <button
-        class="border border-gray-300 text-black px-4 py-2 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
+    <!-- Buttons Desktop -->
+    <div class="hidden md:flex items-center space-x-3">
+      <button class="border border-gray-300 text-black px-4 py-2 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
         PPDB
       </button>
-      <button
-        class="bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800 transition-colors text-sm">
+      <button class="bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800 transition-colors text-sm">
         Hubungi Kami
+      </button>
+    </div>
+
+    <!-- Hamburger Mobile -->
+    <div class="md:hidden flex items-center">
+      <button id="hamburgerBtn" class="flex flex-col justify-between w-6 h-6">
+        <span class="block w-full h-0.5 bg-black"></span>
+        <span class="block w-full h-0.5 bg-black"></span>
+        <span class="block w-full h-0.5 bg-black"></span>
       </button>
     </div>
   </div>
 </nav>
-<!-- End Navigation -->
+
+<!-- Mobile Overlay Menu -->
+<div id="mobileOverlay" class="fixed inset-0 bg-white z-50 -translate-x-full transition-transform duration-500 flex flex-col p-8">
+  <!-- Close Button -->
+  <button id="closeOverlay" class="absolute top-6 right-6 text-3xl text-black font-normal">&times;</button>
+
+  <!-- Logo -->
+  <div class="absolute top-6 left-6 flex items-center space-x-3">
+    <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
+    <div class="flex flex-col leading-tight">
+      <span class="font-black text-[#117554] text-2xl tracking-wide">SMKN</span>
+      <span class="font-light text-[#117554] text-sm">Juara Negeri</span>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Links -->
+  <div class="flex flex-col space-y-6 text-left mt-24 animate-slideIn">
+    <a href="index.html" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Beranda</a>
+    <a href="#about" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Tentang Kami</a>
+    <a href="#kompetensikeahlian" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Kompetensi Keahlian</a>
+    <a href="#fasilitas" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Fasilitas</a>
+    <a href="#article" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Berita</a>
+    <a href="#" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">E-Learning</a>
+
+    <!-- Mobile Buttons -->
+    <div class="flex flex-col space-y-3 mt-6">
+      <button class="border border-gray-300 text-black px-6 py-3 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
+        PPDB
+      </button>
+      <button class="bg-emerald-700 text-white px-6 py-3 rounded-full hover:bg-emerald-800 transition-colors text-sm">
+        Hubungi Kami
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Simple slide-in animation for mobile menu links */
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-slideIn a {
+    animation: slideIn 0.4s forwards;
+  }
+</style>
+
+<script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileOverlay = document.getElementById('mobileOverlay');
+  const closeOverlay = document.getElementById('closeOverlay');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileOverlay.classList.remove('-translate-x-full');
+  });
+
+  closeOverlay.addEventListener('click', () => {
+    mobileOverlay.classList.add('-translate-x-full');
+  });
+</script>
+
 
 <!-- Supaya konten tidak ketutupan navbar -->
 <div class="pt-20"></div>
 
 
 
-    <!-- Hero Section -->
-    <div class="relative h-96 bg-mygreen overflow-hidden rounded-3xl mx-6 mt-6">
-        <div class="absolute inset-0 bg-black/20"></div>
-        <div class="absolute inset-0 bg-mygreen/60 to-transparent"></div>
-        
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
+   <!-- Hero Section -->
+<div class="relative bg-mygreen overflow-hidden rounded-3xl mx-6 mt-6">
+    <!-- Overlays -->
+    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="absolute inset-0 bg-mygreen/60 to-transparent"></div>
+    
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+    </div>
+    
+    <div class="relative flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 md:h-96">
+        <!-- Left Text -->
+        <div class="text-white max-w-full md:max-w-lg text-center md:text-left mb-6 md:mb-0">
+            <h1 class="text-3xl md:text-5xl font-light mb-2 italic">Nama Jurusan Sekolah Anda</h1>
+            <p class="text-lg md:text-xl font-light">Kompetensi Keahlian</p>
         </div>
         
-        <div class="relative h-full flex items-center justify-between px-12">
-            <div class="text-white max-w-lg">
-                <h1 class="text-5xl font-light mb-4 italic">Nama Jurusan Sekolah Anda</h1>
-                <p class="text-xl font-light">Kompetensi Keahlian</p>
+        <!-- Right Panel -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-gray-800 w-full md:min-w-80">
+            <h3 class="font-semibold text-lg mb-4">Informasi Program</h3>
+            <div class="space-y-2 text-sm">
+                <p>Jl. Pendidikan No. 123</p>
+                <p>Jakarta Selatan 12560</p>
+                <p>Jakarta, Indonesia</p>
+                <p class="font-medium">+62 21 1234-5678</p>
             </div>
-            
-            <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 text-gray-800 min-w-80">
-                <h3 class="font-semibold text-lg mb-4">Informasi Program</h3>
-                <div class="space-y-2 text-sm">
-                    <p>Jl. Pendidikan No. 123</p>
-                    <p>Jakarta Selatan 12560</p>
-                    <p>Jakarta, Indonesia</p>
-                    <p class="font-medium">+62 21 1234-5678</p>
-                </div>
-                <button class="mt-6 bg-gray-800 text-white px-6 py-2 rounded-lg text-sm hover:bg-gray-700 transition-colors w-full">
-                    Hubungi Kami
-                </button>
-            </div>
+            <button class="mt-6 bg-gray-800 text-white px-6 py-2 rounded-lg text-sm hover:bg-gray-700 transition-colors w-full">
+                Hubungi Kami
+            </button>
         </div>
     </div>
-
- <!-- About Section -->
-<section class="bg-white">
-    <div class="max-w-7xl mx-auto px-12 py-20">
-        
-        <!-- Two Column Layout -->
-        <div class="grid grid-cols-12 gap-20 items-start">
-            
-            <!-- Left Column - Title -->
-            <div class="col-span-4 pt-2">
-                <h1 class="text-4xl font-bold text-gray-900 tracking-tight leading-tight">
-                    Tentang Program
-                </h1>
-                
-                <!-- Additional Content untuk mengisi ruang kosong -->
-                <div class="mt-12 space-y-6">
-                    <div class="w-16 h-1 bg-blue-600 rounded-full"></div>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Program unggulan yang telah terakreditasi dan diakui oleh industri teknologi nasional.
-                    </p>
-                    
-                    <!-- Key Features -->
-                    <div class="space-y-4 mt-8">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                            <span class="text-sm text-gray-700">Kurikulum Industry 4.0</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                            <span class="text-sm text-gray-700">Sertifikasi Internasional</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                            <span class="text-sm text-gray-700">Job Guarantee Program</span>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
-                            <span class="text-sm text-gray-700">Praktek Kerja Industri</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Contact Info -->
-                    <div class="mt-12 pt-8 border-t border-gray-200">
-                        <p class="text-xs text-gray-500 uppercase tracking-widest mb-2">Info Lebih Lanjut</p>
-                        <p class="text-sm text-gray-700">smknjuara.sch.id</p>
-                        <p class="text-sm text-gray-700">+62 21 1234 5678</p>
-                    </div>
-                </div>
-            </div>
-            
-        <!-- Right Column - Content -->
-<div class="col-span-8">
-  <div class="text-gray-700 text-lg leading-relaxed font-light text-justify">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-      dignissim, urna non varius mattis, mauris sapien facilisis
-      ipsum, non pulvinar lorem risus ut elit. Vivamus ac dolor vel
-      ligula viverra luctus. Cras ut purus vitae nisl cursus
-      sollicitudin. Integer luctus, risus a dictum consequat, orci
-      massa gravida erat, nec dictum nulla ligula at ipsum.
-
-      <br>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-      dignissim, urna non varius mattis, mauris sapien facilisis
-      ipsum, non pulvinar lorem risus ut elit. Vivamus ac dolor vel
-      ligula viverra luctus. Cras ut purus vitae nisl cursus
-      sollicitudin. Integer luctus, risus a dictum consequat, orci
-      massa gravida erat, nec dictum nulla ligula at ipsum.
-    </p>
-  </div>
-
-  <!-- Stats Grid -->
-  <div class="grid grid-cols-4 gap-8 mt-14 pt-8 border-t border-gray-100">
-    <div class="text-center">
-      <div class="text-3xl font-light text-gray-900 mb-2">4</div>
-      <div class="text-sm text-gray-500 uppercase tracking-widest">
-        Tahun Program
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="text-3xl font-light text-gray-900 mb-2">35+</div>
-      <div class="text-sm text-gray-500 uppercase tracking-widest">
-        Mata Pelajaran
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="text-3xl font-light text-gray-900 mb-2">98%</div>
-      <div class="text-sm text-gray-500 uppercase tracking-widest">
-        Tingkat Kelulusan
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="text-3xl font-light text-gray-900 mb-2">350+</div>
-      <div class="text-sm text-gray-500 uppercase tracking-widest">
-        Alumni Sukses
-      </div>
-    </div>
-  </div>
 </div>
 
-            
-        </div>
+
+<!-- About Section -->
+<section class="bg-white">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-20">
+    
+    <!-- Two Column Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 items-start">
+      
+      <!-- Left Column - Title -->
+      <div class="col-span-1 md:col-span-4 pt-2">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
+          Tentang Program
+        </h1>
         
+        <!-- Additional Content -->
+        <div class="mt-8 md:mt-12 space-y-6">
+          <div class="w-16 h-1 bg-blue-600 rounded-full"></div>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+            Program unggulan yang telah terakreditasi dan diakui oleh industri teknologi nasional.
+          </p>
+          
+          <!-- Key Features -->
+          <div class="space-y-4 mt-6 md:mt-8">
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              <span class="text-sm md:text-base text-gray-700">Kurikulum Industry 4.0</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              <span class="text-sm md:text-base text-gray-700">Sertifikasi Internasional</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              <span class="text-sm md:text-base text-gray-700">Job Guarantee Program</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+              <span class="text-sm md:text-base text-gray-700">Praktek Kerja Industri</span>
+            </div>
+          </div>
+          
+          <!-- Contact Info -->
+          <div class="mt-8 md:mt-12 pt-6 border-t border-gray-200">
+            <p class="text-xs text-gray-500 uppercase tracking-widest mb-2">Info Lebih Lanjut</p>
+            <p class="text-sm text-gray-700">smknjuara.sch.id</p>
+            <p class="text-sm text-gray-700">+62 21 1234 5678</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column - Content -->
+      <div class="col-span-1 md:col-span-8">
+        <div class="text-gray-700 text-base md:text-lg leading-relaxed font-light text-justify md:text-left">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            dignissim, urna non varius mattis, mauris sapien facilisis
+            ipsum, non pulvinar lorem risus ut elit. Vivamus ac dolor vel
+            ligula viverra luctus. Cras ut purus vitae nisl cursus
+            sollicitudin. Integer luctus, risus a dictum consequat, orci
+            massa gravida erat, nec dictum nulla ligula at ipsum.
+          </p>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            dignissim, urna non varius mattis, mauris sapien facilisis
+            ipsum, non pulvinar lorem risus ut elit. Vivamus ac dolor vel
+            ligula viverra luctus. Cras ut purus vitae nisl cursus
+            sollicitudin. Integer luctus, risus a dictum consequat, orci
+            massa gravida erat, nec dictum nulla ligula at ipsum.
+          </p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 md:mt-14 pt-6 md:pt-8 border-t border-gray-100">
+          <div class="text-center">
+            <div class="text-2xl md:text-3xl font-light text-gray-900 mb-2">4</div>
+            <div class="text-xs md:text-sm text-gray-500 uppercase tracking-widest">
+              Tahun Program
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl md:text-3xl font-light text-gray-900 mb-2">35+</div>
+            <div class="text-xs md:text-sm text-gray-500 uppercase tracking-widest">
+              Mata Pelajaran
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl md:text-3xl font-light text-gray-900 mb-2">98%</div>
+            <div class="text-xs md:text-sm text-gray-500 uppercase tracking-widest">
+              Tingkat Kelulusan
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl md:text-3xl font-light text-gray-900 mb-2">350+</div>
+            <div class="text-xs md:text-sm text-gray-500 uppercase tracking-widest">
+              Alumni Sukses
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
+    
+  </div>
 </section>
+
 
   
 <section class="relative">
@@ -391,6 +465,8 @@
     </section> 
      <!--End Partners Section -->
 
+
+     <script src="script.js"></script>
 <script>
   let currentSlide = 0;
   const slider = document.getElementById('slider');

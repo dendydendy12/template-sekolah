@@ -173,3 +173,17 @@
       clearTimeout(window._blueTimer);
       window._blueTimer = setTimeout(alignBlueBackground, 80);
     });
+
+
+
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileOverlay = document.getElementById('mobileOverlay');
+  const closeOverlay = document.getElementById('closeOverlay');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileOverlay.classList.remove('-translate-x-full');
+  });
+
+  closeOverlay.addEventListener('click', () => {
+    mobileOverlay.classList.add('-translate-x-full');
+  });
