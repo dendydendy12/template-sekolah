@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMKN Juara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          mygreen: '#064232',
+          green: '#117554',
+        }
+      }
+    }
+  }
+</script>
+
+
+
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body class="hero-bg min-h-screen">
+   <!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-6 py-3">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <div class="flex items-center justify-center">
+        <img src="assets/logos/logo.PNG" alt="logo" class="w-10 h-10 object-contain">
+      </div>
+    <div class="flex flex-col leading-tight">
+  <span class="font-black text-[#117554] text-2xl tracking-wide">
+    SMKN
+  </span>
+  <span class="font-light text-[#117554] text-sm">
+    Juara Negeri
+  </span>
+</div>
+
+
+    </div>
+
+    <!-- Menu -->
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="#" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Beranda</a>
+      <a href="#about" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Tentang Kami</a>
+      <a href="#kompetensikeahlian" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Kompetensi Keahlian</a>
+      <a href="#fasilitas" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Fasilitas</a>
+      <a href="#article" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Berita</a>
+      <a href="#" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">E-Learning</a>
+    </div>
+
+    <!-- Tombol -->
+    <div class="flex items-center space-x-3">
+      <button
+        class="border border-gray-300 text-black px-4 py-2 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
+        PPDB
+      </button>
+      <button
+        class="bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800 transition-colors text-sm">
+        Hubungi Kami
+      </button>
+    </div>
+  </div>
+</nav>
+<!-- End Navigation -->
+
+<!-- Supaya konten tidak ketutupan navbar -->
+<div class="pt-20"></div>
+
+
+    <!-- Hero Section -->
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="space-y-10">
+                <div class="space-y-4">
+    
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                        Selamat Datang di<br>
+                        Sekolah Unggulan <span class="text-emerald-700">SMKN JUARA</span><br>
+                    </h1>
+                </div>
+
+                <p class="text-gray-600 text-lg leading-relaxed max-w-md text-justify">
+                    Selamat datang di SMK Jabar Juara, institusi pendidikan vokasi terkemuka di Jawa Barat yang
+                    berkomitmen mencetak generasi muda berdaya saing global. Berlokasi strategis di Kota Bandung, SMK
+                    Jabar Juara hadir sebagai jawaban atas kebutuhan industri
+                </p>
+
+                <button
+                    class="bg-emerald-700 text-white px-8 py-4 rounded-full font-medium hover:bg-emerald-800 transition-colors">
+                    Kunjungi Kami
+                </button>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-3 pt-4">
+                    <span
+                        class="px-4 py-2 border border-gray-300 rounded-full text-gray-700 text-sm hover:border-gray-400 transition-colors">
+                        Teknik Komputer & Jaringan
+                    </span>
+                    <span
+                        class="px-4 py-2 border border-gray-300 rounded-full text-gray-700 text-sm hover:border-gray-400 transition-colors">
+                        Multimedia
+                    </span>
+                    <span
+                        class="px-4 py-2 border border-gray-300 rounded-full text-gray-700 text-sm hover:border-gray-400 transition-colors">
+                        Rekayasa Perangkat Lunak
+                    </span>
+                    <span
+                        class="px-4 py-2 border border-gray-300 rounded-full text-gray-700 text-sm hover:border-gray-400 transition-colors">
+                        Akuntansi & Keuangan
+                    </span>
+                    <span
+                        class="px-4 py-2 border border-gray-300 rounded-full text-gray-700 text-sm hover:border-gray-400 transition-colors">
+                        Bisnis Digital
+                    </span>
+                </div>
+            </div>
+
+            <!-- Right Image Space -->
+            <div class="relative">
+                <div class="w-full h-96 lg:h-[600px] rounded-3xl overflow-hidden">
+                    <img src="assets/image/foto.png" alt="Justice statue" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- End Hero Section -->
+
+    <!-- Partners Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Mitra Kami</h2>
+                <p class="text-gray-600">Dipercaya oleh berbagai perusahaan dan institusi terkemuka</p>
+            </div>
+
+            <!-- Logo Slider -->
+            <div class="overflow-hidden">
+                <div class="flex animate-scroll space-x-12">
+                    <!-- First set of logos -->
+                    <div
+                        class="flex items-center justify-center min-w-[150px] h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="assets/logos/bonet.png" alt="Partner 1" class="max-h-12 max-w-[120px] object-contain">
+                    </div>
+
+                    <!-- First set of logos -->
+                    <div
+                        class="flex items-center justify-center min-w-[150px] h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="assets/logos/bonet.png" alt="Partner 1" class="max-h-12 max-w-[120px] object-contain">
+                    </div>
+
+                    <!-- First set of logos -->
+                    <div
+                        class="flex items-center justify-center min-w-[150px] h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="assets/logos/bonet.png" alt="Partner 1" class="max-h-12 max-w-[120px] object-contain">
+                    </div>
+
+                    <!-- First set of logos -->
+                    <div
+                        class="flex items-center justify-center min-w-[150px] h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="assets/logos/bonet.png" alt="Partner 1" class="max-h-12 max-w-[120px] object-contain">
+                    </div>
+
+
+
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div
+                        class="flex items-center justify-center min-w-[150px] h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="assets/logos/bonet.png" alt="Partner 1" class="max-h-12 max-w-[120px] object-contain">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div
+                        class="flex items-center justify-center min-w-[150px] h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="assets/logos/bonet.png" alt="Partner 1" class="max-h-12 max-w-[120px] object-contain">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div
+                        class="flex items-center justify-center min-w-[150px] h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="assets/logos/bonet.png" alt="Partner 1" class="max-h-12 max-w-[120px] object-contain">
+                    </div>
+
+                    <!-- Duplicate set for seamless loop -->
+                    <div
+                        class="flex items-center justify-center min-w-[150px] h-16 opacity-60 hover:opacity-100 transition-opacity">
+                        <img src="assets/logos/bonet.png" alt="Partner 1" class="max-h-12 max-w-[120px] object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+     <!--End Partners Section -->
+
+     <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Image -->
+                <div class="relative">
+                    <div class="w-full h-80 lg:h-96 rounded-2xl overflow-hidden bg-gray-200">
+                        <img src="assets/image/siswa.PNG" alt="Tentang Kami" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <!-- Right Content -->
+                <div class="space-y-6">
+                    <div class="space-y-4">                    
+                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                            Profile<br>
+                            SMKN Juara<br>
+                            Sekolah Unggulan
+                        </h2>
+                    </div>
+                    
+                    <p class="text-gray-600 text-lg leading-relaxed text-justify">
+                        SMK Negeri Juara didirikan dengan visi menjadi institusi pendidikan vokasi terdepan yang menghasilkan lulusan berkompeten tinggi dan siap menghadapi tantangan dunia kerja modern. Kami berkomitmen memberikan pendidikan berkualitas dengan fasilitas terbaik dan tenaga pengajar berpengalaman.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- End About Us Section -->
+
+  <!-- Visi Misi -->
+<section class="max-w-6xl mx-auto py-12 px-4">
+  
+    <!-- Visi Section -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="flex flex-col lg:flex-row-reverse items-center">
+            <!-- Image Content -->
+            <div class="lg:w-1/2 w-full">
+                <img src="assets/image/visi.PNG" alt="Visi Sekolah" class="w-full h-96 object-cover">
+            </div>
+            <!-- Text Content -->
+            <div class="lg:w-1/2 w-full p-8 lg:p-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-emerald-600 mb-6">Visi Sekolah</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed text-justify">
+                    Menjadi sekolah vokasi unggulan yang melahirkan generasi berdaya saing global, 
+                    berkarakter, dan berkontribusi nyata bagi masyarakat serta dunia industri.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Menjadi pusat pembelajaran berbasis teknologi
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Melahirkan lulusan berdaya saing tinggi
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+      <!-- Misi Section -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+        <div class="flex flex-col lg:flex-row items-center">
+            <!-- Image Content -->
+            <div class="lg:w-1/2 w-full">
+                <img src="assets/image/misi.PNG" alt="Misi Sekolah" class="w-full h-96 object-cover">
+            </div>
+            <!-- Text Content -->
+            <div class="lg:w-1/2 w-full p-8 lg:p-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-emerald-600 mb-6">Misi Sekolah</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed text-justify">
+                    SMK Negeri Juara berkomitmen mencetak lulusan yang kompeten, berkarakter, 
+                    dan siap menghadapi dunia kerja melalui pembelajaran berbasis teknologi, 
+                    praktik nyata, serta penguatan nilai-nilai moral.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Mengembangkan keterampilan sesuai kebutuhan industri
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Menanamkan kedisiplinan, integritas, dan tanggung jawab
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Mendorong inovasi, kreativitas, dan jiwa kewirausahaan
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+ <!-- End Visi Misi -->
+
+<!-- Sambutan Kepala Sekolah Section -->
+    <section class="py-16 bg-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <pattern id="pattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+                    <circle cx="30" cy="30" r="2" fill="#10b981"/>
+                </pattern>
+                <rect width="100%" height="100%" fill="url(#pattern)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Sambutan Kepala Sekolah</h2>
+                <div class="w-20 h-1 bg-emerald-700 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Content - Message -->
+                <div class="order-2 lg:order-1 space-y-8">
+                   
+
+                    <!-- Quote Card -->
+                    <div class="card-gradient rounded-3xl p-8 relative animate-fadeInUp animate-delay-300">
+                        <!-- Large Quote Mark -->
+                        <div class="quote-mark text-6xl font-bold absolute top-4 left-6">"</div>
+                        
+                        <!-- Message Content -->
+                        <div class="relative z-10 pt-8">
+                            <p class="text-gray-700 text-lg leading-relaxed mb-6 font-light text-justify">
+                                Selamat datang di SMK Negeri Juara, institusi pendidikan yang berkomitmen menghasilkan lulusan berkualitas tinggi dan siap bersaing di era global. Kami tidak hanya fokus pada pengembangan keterampilan teknis, tetapi juga pembentukan karakter yang kuat.
+                            </p>
+                            
+                            <p class="text-gray-600 text-base leading-relaxed mb-8 text-justify">
+                                Mari bersama-sama membangun masa depan yang gemilang melalui pendidikan vokasi yang berkualitas dan berorientasi pada kebutuhan industri modern.
+                            </p>
+
+                            <!-- Signature Area -->
+                            <div class="border-t border-gray-200 pt-6">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h4 class="text-xl font-semibold text-gray-900 mb-1">Harry Potter.</h4>
+                                        <p class="text-emerald-700 font-medium text-sm tracking-wide">Kepala Sekolah SMK Negeri Juara</p>
+                                    </div>
+                                    
+                                    <!-- Decorative Element -->
+                                    <div class="hidden sm:block">
+                                        <div class="w-16 h-0.5 bg-emerald-200"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Photo -->
+                <div class="order-1 lg:order-2 animate-fadeInUp animate-delay-600">
+                    <div class="relative">
+                        <!-- Main Photo Container -->
+                        <div class="relative profile-shadow rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-50 to-teal-50">
+                            <img 
+                                src="assets/image/kepsek.PNG" 
+                                alt="Kepala Sekolah" 
+                                class="w-full h-[500px] object-cover"
+                            >
+                            
+                            <!-- Overlay Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+                        </div>
+                   
+                        <!-- Background Decoration -->
+                        <div class="absolute -top-8 -right-8 w-32 h-32 bg-emerald-100 rounded-full opacity-20 -z-10"></div>
+                        <div class="absolute -bottom-4 -right-12 w-20 h-20 bg-teal-200 rounded-full opacity-25 -z-10"></div>
+                    </div>
+                </div>
+
+            </div>
+
+           
+        </div>
+    </section>
+<!-- End Sambutan Kepala Sekolah Section -->
+
+ <!-- Kompetensi Keahlian Section -->
+    <section id="kompetensikeahlian" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- Header Section -->
+            <div class="text-center mb-16 animate-fadeInUp">
+                
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                    Kompetensi Keahlian
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+                    Temukan program keahlian yang tepat dengan fasilitas modern dan kurikulum yang sesuai dengan kebutuhan industri masa depan
+                </p>
+            </div>
+             
+            <!-- Slider Container -->
+            <div class="relative">
+                <!-- Navigation Buttons -->
+                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-lg slider-button border border-gray-100 flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity">
+                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white shadow-lg slider-button border border-gray-100 flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity">
+                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Cards Container -->
+                <div id="slider" class="overflow-x-auto scrollbar-hide scroll-container px-12">
+                    <div class="flex space-x-8 pb-6" style="width: max-content;">
+                        
+                        <!-- Card 1 - RPL -->
+                        <div class="bg-white rounded-2xl shadow-sm overflow-hidden card-hover flex-shrink-0 border border-gray-100" style="width: 320px;">
+                            <div class="relative h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=300&fit=crop" alt="Rekayasa Perangkat Lunak" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-4">
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Rekayasa Perangkat Lunak</h3>
+                                    <p class="text-sm text-gray-500">Teknologi & Programming</p>
+                                </div>
+                                <a href="jurusan.html" class="block w-full py-3 text-center text-emerald-700 text-sm font-medium hover:bg-emerald-50 transition-colors rounded-lg border border-emerald-200 hover:border-emerald-300">
+      Lihat Selengkapnya
+    </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 - TKJ -->
+                        <div class="bg-white rounded-2xl shadow-sm overflow-hidden card-hover flex-shrink-0 border border-gray-100" style="width: 320px;">
+                            <div class="relative h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop" alt="Teknik Komputer Jaringan" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-4">
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Teknik Komputer Jaringan</h3>
+                                    <p class="text-sm text-gray-500">Networking & Infrastructure</p>
+                                </div>
+<a href="jurusan.html" class="block w-full py-3 text-center text-emerald-700 text-sm font-medium hover:bg-emerald-50 transition-colors rounded-lg border border-emerald-200 hover:border-emerald-300">
+      Lihat Selengkapnya
+    </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 - MM -->
+                        <div class="bg-white rounded-2xl shadow-sm overflow-hidden card-hover flex-shrink-0 border border-gray-100" style="width: 320px;">
+                            <div class="relative h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1561736778-92e52a7769ef?w=400&h=300&fit=crop" alt="Multimedia" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-4">
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Multimedia</h3>
+                                    <p class="text-sm text-gray-500">Design & Creative Media</p>
+                                </div>
+                                <a href="jurusan.html" class="block w-full py-3 text-center text-emerald-700 text-sm font-medium hover:bg-emerald-50 transition-colors rounded-lg border border-emerald-200 hover:border-emerald-300">
+      Lihat Selengkapnya
+    </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 - AK -->
+                        <div class="bg-white rounded-2xl shadow-sm overflow-hidden card-hover flex-shrink-0 border border-gray-100" style="width: 320px;">
+                            <div class="relative h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop" alt="Akuntansi Keuangan" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-4">
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Akuntansi Keuangan</h3>
+                                    <p class="text-sm text-gray-500">Finance & Business</p>
+                                </div>
+                                <a href="jurusan.html" class="block w-full py-3 text-center text-emerald-700 text-sm font-medium hover:bg-emerald-50 transition-colors rounded-lg border border-emerald-200 hover:border-emerald-300">
+      Lihat Selengkapnya
+    </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 - BD -->
+                        <div class="bg-white rounded-2xl shadow-sm overflow-hidden card-hover flex-shrink-0 border border-gray-100" style="width: 320px;">
+                            <div class="relative h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Bisnis Digital" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-4">
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Bisnis Digital</h3>
+                                    <p class="text-sm text-gray-500">E-commerce & Marketing</p>
+                                </div>
+                               <a href="jurusan.html" class="block w-full py-3 text-center text-emerald-700 text-sm font-medium hover:bg-emerald-50 transition-colors rounded-lg border border-emerald-200 hover:border-emerald-300">
+      Lihat Selengkapnya
+    </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 - OTKP -->
+                        <div class="bg-white rounded-2xl shadow-sm overflow-hidden card-hover flex-shrink-0 border border-gray-100" style="width: 320px;">
+                            <div class="relative h-48 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop" alt="Otomatisasi Tata Kelola Perkantoran" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <div class="mb-4">
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Otomatisasi Tata Kelola Perkantoran</h3>
+                                    <p class="text-sm text-gray-500">Office Management & Administration</p>
+                                </div>
+                                <a href="jurusan.html" class="block w-full py-3 text-center text-emerald-700 text-sm font-medium hover:bg-emerald-50 transition-colors rounded-lg border border-emerald-200 hover:border-emerald-300">
+      Lihat Selengkapnya
+    </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Progress Dots -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <div id="dot-0" class="w-2 h-2 bg-emerald-700 rounded-full transition-all cursor-pointer"></div>
+                    <div id="dot-1" class="w-2 h-2 bg-gray-300 rounded-full transition-all cursor-pointer hover:bg-gray-400"></div>
+                    <div id="dot-2" class="w-2 h-2 bg-gray-300 rounded-full transition-all cursor-pointer hover:bg-gray-400"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End Kompetensi Keahlian Section -->
+
+  <!-- Fasilitas-->
+  <section id="fasilitas" class="w-full min-h-screen">
+        <div class="main-container">
+            <!-- Left Side - Information Panel -->
+            <div class="flex-1 bg-mygreen p-6 text-white p-6 md:p-8 lg:p-12 flex flex-col justify-center relative">
+                <!-- Background Pattern -->
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-10 left-10 w-32 h-32 border-2 border-white rounded-full"></div>
+                    <div class="absolute bottom-20 right-16 w-24 h-24 border-2 border-white rounded-full"></div>
+                    <div class="absolute top-1/2 right-8 w-16 h-16 border-2 border-white rounded-full"></div>
+                </div>
+
+                <div class="relative z-10 max-w-xl">
+                    <!-- Header -->
+                    <div class="mb-8">
+                        
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                            Sarana dan 
+                            <span class="text-emerald-200">Fasilitas</span>
+                        </h1>
+                        <p class="text-emerald-100 text-base md:text-lg leading-relaxed">
+                            Fasilitas modern dan lengkap untuk mendukung proses pembelajaran yang optimal dan pengembangan keterampilan siswa di era digital.
+                        </p>
+                    </div>
+
+                    <!-- Categories List -->
+                    <div class="space-y-4">
+                        <!-- IT Lab -->
+                        <div class="category-item group">
+                            <div class="flex items-start space-x-4 p-4 rounded-2xl hover:bg-emerald-500 transition-all duration-300 cursor-pointer">
+                                
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-lg mb-1 text-white">
+                                        Laboratorium IT
+                                    </h3>
+                                    <p class="text-emerald-100 text-sm leading-relaxed font-normal">
+                                        Komputer modern dengan software terbaru untuk pembelajaran programming dan desain digital
+                                    </p>
+                                </div>
+                                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <svg class="w-5 h-5 text-emerald-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Workshop -->
+                        <div class="category-item group">
+                            <div class="flex items-start space-x-4 p-4 rounded-2xl hover:bg-emerald-500 transition-all duration-300 cursor-pointer">
+                                
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-lg mb-1 text-white">
+                                        Workshop Praktik
+                                    </h3>
+                                    <p class="text-emerald-100 text-sm leading-relaxed font-normal">
+                                        Ruang kerja lengkap dengan peralatan modern untuk praktik hands-on
+                                    </p>
+                                </div>
+                                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <svg class="w-5 h-5 text-emerald-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Library -->
+                        <div class="category-item group">
+                            <div class="flex items-start space-x-4 p-4 rounded-2xl hover:bg-emerald-500 transition-all duration-300 cursor-pointer">
+                               
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-lg mb-1 text-white">
+                                        Perpustakaan Digital
+                                    </h3>
+                                    <p class="text-emerald-100 text-sm leading-relaxed font-normal">
+                                        Koleksi buku digital dan ruang belajar yang nyaman dengan akses internet
+                                    </p>
+                                </div>
+                                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <svg class="w-5 h-5 text-emerald-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sports -->
+                        <div class="category-item group">
+                            <div class="flex items-start space-x-4 p-4 rounded-2xl hover:bg-emerald-500 transition-all duration-300 cursor-pointer">
+                          
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-lg mb-1 text-white">
+                                        Fasilitas Olahraga
+                                    </h3>
+                                    <p class="text-emerald-100 text-sm leading-relaxed font-normal">
+                                        Lapangan multifungsi dan gymnasium untuk kegiatan olahraga dan kesehatan
+                                    </p>
+                                </div>
+                                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <svg class="w-5 h-5 text-emerald-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Facility Cards -->
+            <div class="flex-1 bg-white p-6 md:p-8 lg:p-12 flex items-center">
+                <div class="w-full max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Lab IT Card -->
+                        <div class="facility-card bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="assets/image/labkom.PNG" 
+                                     alt="Laboratorium IT" 
+                                     class="h-48 w-full object-cover">
+                                <div class="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                                    Terbaru
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="font-bold text-gray-900 text-lg mb-3">Laboratorium IT</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                    30 unit komputer dengan spesifikasi tinggi, dilengkapi software development dan design terkini untuk mendukung pembelajaran digital.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-emerald-600 font-medium text-sm">30+ Komputer</span>
+                                    <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Workshop Card -->
+                        <div class="facility-card bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="assets/image/labworkshop.PNG" 
+                                     alt="Workshop Praktik" 
+                                     class="h-48 w-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h4 class="font-bold text-gray-900 text-lg mb-3">Workshop Praktik</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                    Ruang workshop dengan peralatan lengkap untuk praktik langsung dan pengembangan keterampilan teknis.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-emerald-600 font-medium text-sm">Peralatan Modern</span>
+                                    <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Library Card -->
+                        <div class="facility-card bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="assets/image/perpus.PNG" 
+                                     alt="Perpustakaan Digital" 
+                                     class="h-48 w-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h4 class="font-bold text-gray-900 text-lg mb-3">Perpustakaan Digital</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                    Koleksi buku digital terlengkap dengan sistem pencarian canggih dan ruang baca yang nyaman.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-emerald-600 font-medium text-sm">1000+ E-Books</span>
+                                    <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sports Card -->
+                        <div class="facility-card bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden hover-lift">
+                            <div class="relative">
+                                <img src="assets/image/lapangan.PNG" 
+                                     alt="Fasilitas Olahraga" 
+                                     class="h-48 w-full object-cover">
+                                <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                                    Populer
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h4 class="font-bold text-gray-900 text-lg mb-3">Fasilitas Olahraga</h4>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                    Gymnasium dan lapangan multifungsi untuk berbagai kegiatan olahraga dan pengembangan fisik siswa.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-emerald-600 font-medium text-sm">Multi-Sports</span>
+                                    <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End Fasilitas-->
+
+
+
+
+<!-- article section -->
+<section id="article" class="max-w-7xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <div class="flex justify-between items-start mb-8">
+        <div>
+            <h2 class="text-3xl font-bold text-black mb-1">Artikel Terbaru <br> 
+                <span class="text-emerald-700">SMKN Juara</span>
+            </h2>
+        </div>
+        <a href="detail.html" class="text-black font-medium hover:text-gray-600 transition-colors">
+            Lihat Semua
+        </a>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Featured Article - Left Side -->
+        <div class="lg:col-span-7">
+            <a href="detail.html" class="block relative h-96 lg:h-[500px] rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="assets/image/siswa.PNG" 
+                     alt="Featured Article" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 featured-card"></div>
+                <div class="absolute bottom-0 left-0 p-8 text-white">
+                    <span class="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium mb-4">
+                        Unggulan
+                    </span>
+                    <h3 class="text-2xl lg:text-3xl font-bold leading-tight mb-3">
+                        Prestasi Membanggakan Siswa SMK dalam Kompetisi Nasional Teknologi
+                    </h3>
+                    <p class="text-white/90 text-sm">
+                        15 Des, 2024
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Article List - Right Side with Internal Scroll -->
+        <div class="lg:col-span-5 h-[500px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+            <div class="space-y-4">
+
+                <!-- Article 1 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 1" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Program Magang Industri Membuka Peluang Karir Siswa
+                        </h4>
+                        <p class="text-gray-500 text-sm">15 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 2 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 2" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Fasilitas Laboratory Komputer Terbaru untuk Mendukung Pembelajaran
+                        </h4>
+                        <p class="text-gray-500 text-sm">14 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 3 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 3" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Kerjasama dengan Perpustakaan Digital Nasional Tingkatkan Literasi
+                        </h4>
+                        <p class="text-gray-500 text-sm">13 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 4 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 4" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Workshop Keterampilan Digital untuk Persiapan Era Industri 4.0
+                        </h4>
+                        <p class="text-gray-500 text-sm">12 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 5 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 5" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Ekstrakurikuler Robotika Raih Juara dalam Kompetisi Regional
+                        </h4>
+                        <p class="text-gray-500 text-sm">11 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 6 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 6" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Kantin Sehat dan Bergizi Dukung Kesehatan Siswa
+                        </h4>
+                        <p class="text-gray-500 text-sm">10 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 7 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 7" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Seminar Pendidikan Karakter dan Soft Skills untuk Masa Depan
+                        </h4>
+                        <p class="text-gray-500 text-sm">09 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 8 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 8" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Pelatihan Guru dalam Mengintegrasikan Teknologi AI di Pembelajaran
+                        </h4>
+                        <p class="text-gray-500 text-sm">08 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 9 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 9" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Kunjungan Industri ke Perusahaan IT Terkemuka Jakarta
+                        </h4>
+                        <p class="text-gray-500 text-sm">07 Des, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Article 10 -->
+                <a href="detail.html" class="article-card flex gap-4 p-4 rounded-xl hover:bg-gray-50 cursor-pointer">
+                    <div class="flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=200&h=150&fit=crop&auto=format" 
+                             alt="Article 10" 
+                             class="w-20 h-16 rounded-xl object-cover">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h4 class="font-bold text-gray-900 text-base leading-tight mb-2 line-clamp-2">
+                            Program Literasi Digital untuk Menghadapi Era Informasi
+                        </h4>
+                        <p class="text-gray-500 text-sm">06 Des, 2024</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end article section -->
+
+
+<section id="contactSection" class="relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start pt-20">
+
+      <!-- LEFT -->
+      <div class="pt-6">
+        <h1 class="text-5xl font-extrabold text-slate-900 mb-4">Contact Us</h1>
+        <p class="text-gray-500 max-w-md leading-relaxed mb-6">
+          SMKN Juara berkomitmen memberikan layanan pendidikan terbaik.  
+          Silakan hubungi kami untuk informasi lebih lanjut mengenai program studi, pendaftaran, atau kerja sama.
+        </p>
+
+        <div class="mt-6 text-sm text-gray-700 bg-white/60 p-4 rounded-md shadow-sm max-w-sm">
+          <div class="font-semibold text-gray-900">SMKN Juara</div>
+          <div class="text-gray-600 mt-1">
+            Jl. Pendidikan No. 45, Kecamatan Juara<br>
+            Kota Contoh, 12345<br>
+            Telp: (021) 555-1234
+          </div>
+        </div>
+      </div>
+
+      <!-- MAP CARD -->
+      <div class="absolute left-6 bottom-6 w-96 bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="p-3 text-sm font-semibold text-slate-900">Lokasi SMKN Juara</div>
+        <div class="w-full h-52">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.123456789!2d106.7816!3d-6.2000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdeadbeef!2sSMKN%20Juara!5e0!3m2!1sen!2sid!4v1600000000000!5m2!1sen!2sid"
+            class="w-full h-full border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="relative">
+        <!-- HIJAU CIRCLE belakang form -->
+        <div class="absolute -top-10 -right-14 w-44 h-44 bg-green rounded-full opacity-90 z-0"></div>
+
+        <!-- CARD -->
+        <div id="formCard" class="relative z-20 w-full max-w-lg mx-auto rounded-2xl bg-white p-8 shadow-2xl">
+          <h2 class="text-2xl font-semibold text-green mb-6">Ada pertanyaan seputar SMKN Juara?</h2>
+
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="text-sm text-gray-500 block mb-2">First Name</label>
+                <input class="w-full outline-none bg-transparent border-0 border-b-2 border-gray-200 py-3 px-0 focus:border-green" placeholder="Livia" />
+              </div>
+              <div>
+                <label class="text-sm text-gray-500 block mb-2">Last Name</label>
+                <input class="w-full outline-none bg-transparent border-0 border-b-2 border-gray-200 py-3 px-0 focus:border-green" placeholder="Siphron" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="text-sm text-gray-500 block mb-2">Email</label>
+                <input type="email" class="w-full outline-none bg-transparent border-0 border-b-2 border-gray-200 py-3 px-0 focus:border-green" />
+              </div>
+              <div>
+                <label class="text-sm text-gray-500 block mb-2">Phone Number</label>
+                <input type="tel" class="w-full outline-none bg-transparent border-0 border-b-2 border-gray-200 py-3 px-0 focus:border-green" />
+              </div>
+            </div>
+
+            <div>
+              <label class="text-sm text-gray-500 block mb-2">Message</label>
+              <textarea id="contactMessage" rows="4" class="w-full outline-none bg-transparent border-0 border-b-2 border-gray-200 py-3 px-0 focus:border-green resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-green hover:bg-mygreen text-white py-3 rounded-md font-semibold tracking-wide mt-2">
+              SUBMIT
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- BACKGROUND HIJAU -->
+<div id="blueBg" class="absolute left-0 right-0 bottom-0 bg-mygreen -z-10 min-h-[220px] pb-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+
+    <!-- dekorasi garis putus-putus -->
+    <svg class="w-full h-40 opacity-50" viewBox="0 0 1200 160" fill="none" preserveAspectRatio="none">
+      <path class="dashed-path" d="M60 100 C160 40, 340 140, 540 60 C740 -20, 940 140, 1140 80" stroke="white" stroke-width="2" stroke-dasharray="6 6"/>
+    </svg>
+
+    <!-- pesawat kertas -->
+    <div class="absolute right-32 bottom-28 w-14 h-10 flex items-center justify-center text-white/90">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13"></path>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M22 2l-7 20  -3-9-9-3 19-8z"/>
+      </svg>
+    </div>
+
+    <!-- dekorasi tambahan -->
+    <div class="absolute right-6 bottom-8 w-20 h-28 bg-green rounded-3xl opacity-70 transform rotate-6"></div>
+    <div class="absolute left-0 bottom-0 w-36 h-24 bg-green rounded-tr-3xl opacity-80"></div>
+  </div>
+</div>
+
+
+  
+</section>
+
+
+<!-- Section Ajakan dengan background foto + overlay -->
+<section class="relative py-20 overflow-hidden bg-cover bg-center" 
+         style="background-image: url('assets/image/bg-sekolah.PNG');">
+  
+  <!-- Overlay warna hijau #117554 transparan -->
+  <div class="absolute inset-0 bg-mygreen/90"></div>
+
+  <!-- Hiasan lingkaran dekoratif -->
+  <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
+  <div class="absolute bottom-10 right-10 w-40 h-40 bg-yellow-200/20 rounded-full blur-3xl animate-bounce"></div>
+
+  <!-- Garis putus-putus dekorasi atas -->
+  <svg class="absolute top-0 left-0 w-full h-24 opacity-40" 
+       viewBox="0 0 1200 120" fill="none" preserveAspectRatio="none">
+    <path d="M60 60 C160 10, 340 100, 540 40 C740 -20, 940 100, 1140 60" 
+          stroke="white" stroke-width="2" stroke-dasharray="6 6"/>
+  </svg>
+
+  <!-- Pesawat kertas kiri atas -->
+  <div class="absolute left-10 top-12 w-12 h-12 text-white/90 animate-float rotate-[-15deg]">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" 
+         fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.8">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13"></path>
+      <path stroke-linecap="round" stroke-linejoin="round" d="M22 2l-7 20 -3-9-9-3 19-8z"/>
+    </svg>
+  </div>
+
+  <!-- Pesawat kertas kanan bawah -->
+  <div class="absolute right-16 bottom-12 w-12 h-12 text-white/90 animate-bounce-slow rotate-[10deg]">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" 
+         fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.8">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13"></path>
+      <path stroke-linecap="round" stroke-linejoin="round" d="M22 2l-7 20 -3-9-9-3 19-8z"/>
+    </svg>
+  </div>
+
+  <!-- Garis putus-putus dekorasi bawah -->
+  <svg class="absolute bottom-0 left-0 w-full h-20 opacity-40" 
+       viewBox="0 0 1200 100" fill="none" preserveAspectRatio="none">
+    <path d="M0 60 C200 20, 400 100, 600 40 C800 -20, 1000 80, 1200 50" 
+          stroke="white" stroke-width="2" stroke-dasharray="6 6"/>
+  </svg>
+
+  <!-- Shape hijau tambahan -->
+  <div class="absolute right-24 top-20 w-24 h-32 bg-green rounded-3xl opacity-40 rotate-6 animate-float"></div>
+  <div class="absolute left-1/3 top-40 w-16 h-16 bg-white/10 rounded-full blur-xl animate-pulse"></div>
+
+  <!-- Konten -->
+  <div class="relative max-w-4xl mx-auto text-center px-6">
+    <!-- Judul -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-wide animate-fadeIn">
+      Siap Bergabung Bersama <br>
+      <span class="drop-shadow-lg">SMKN Juara</span>
+    </h2>
+
+    <!-- Deskripsi -->
+    <p class="text-lg md:text-xl text-white/90 mb-10 leading-relaxed font-light animate-fadeIn delay-200">
+      Bergabunglah dengan kami untuk meraih masa depan yang gemilang 
+      melalui pendidikan berkualitas dan fasilitas modern.
+    </p>
+
+    <!-- Tombol -->
+    <a href="#pendaftaran"
+       class="inline-block bg-white text-[#117554] font-semibold px-10 py-3 rounded-full shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300 animate-fadeIn delay-500">
+       Daftar Sekarang
+    </a>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
+    <!-- Kolom 1: Tentang / Branding -->
+    <div class="space-y-4">
+      <img src="assets/logos/logo.PNG" alt="Logo SMKN Juara" class="w-32 object-contain">
+      <p class="text-sm leading-relaxed text-white/90">
+        SMKN Juara berkomitmen memberikan pendidikan vokasi unggul, inovatif, dan adaptif untuk masa depan yang berkelanjutan.
+      </p>
+    </div>
+
+    <!-- Kolom 2: Link Navigasi -->
+    <div class="space-y-4">
+      <h4 class="font-semibold text-lg">Navigasi</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-green transition">Beranda</a></li>
+        <li><a href="#" class="hover:text-green transition">Tentang Kami</a></li>
+        <li><a href="#" class="hover:text-green transition">Kompetensi Keahlian</a></li>
+        <li><a href="#" class="hover:text-green transition">Fasilitas</a></li>
+        <li><a href="#" class="hover:text-green transition">Berita</a></li>
+        <li><a href="#" class="hover:text-green transition">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Kontak & Media Sosial -->
+    <div class="space-y-4">
+      <h4 class="font-semibold text-lg">Hubungi Kami</h4>
+      <p class="text-sm">Alamat: Jl. Contoh No. 123, Kota, Provinsi</p>
+      <p class="text-sm">Telepon: (021) 123-4567</p>
+      <p class="text-sm">Email: info@smknjuara.sch.id</p>
+      <div class="flex space-x-4 mt-2">
+        <a href="#" class="text-white hover:text-green transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">…icon FB…</svg></a>
+        <a href="#" class="text-white hover:text-green transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">…icon Twitter…</svg></a>
+        <a href="#" class="text-white hover:text-green transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">…icon Instagram…</svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-white/30 mt-8">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-white/80">
+      <p>© 2025 SMKN Juara. Seluruh hak cipta dilindungi.</p>
+      <div class="space-x-4 mt-2 md:mt-0">
+        <a href="#" class="hover:text-green transition">Kebijakan Privasi</a>
+        <a href="#" class="hover:text-green transition">Syarat & Ketentuan</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

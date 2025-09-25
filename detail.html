@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Ipsum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-6 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center justify-center">
+          <img src="assets/logos/logo.PNG" alt="logo" class="w-10 h-10 object-contain">
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="font-black text-[#117554] text-2xl tracking-wide">
+            SMKN
+          </span>
+          <span class="font-light text-[#117554] text-sm">
+            Juara Negeri
+          </span>
+        </div>
+
+
+      </div>
+
+      <!-- Menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Beranda</a>
+        <a href="#about" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Tentang
+          Kami</a>
+        <a href="#kompetensikeahlian"
+          class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Kompetensi Keahlian</a>
+        <a href="#fasilitas"
+          class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Fasilitas</a>
+        <a href="#article" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Berita</a>
+        <a href="#" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">E-Learning</a>
+      </div>
+
+      <!-- Tombol -->
+      <div class="flex items-center space-x-3">
+        <button
+          class="border border-gray-300 text-black px-4 py-2 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
+          PPDB
+        </button>
+        <button class="bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800 transition-colors text-sm">
+          Hubungi Kami
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navigation -->
+
+  <!-- Supaya konten tidak ketutupan navbar -->
+  <!-- <div class="pt-20"></div> -->
+
+  <!-- Hero Section -->
+  <div class="relative h-screen bg-green-900 overflow-hidden">
+    <!-- Ganti dengan gambar kamu -->
+    <img src="assets/image/bg-sekolah.PNG" alt="Hero" class="w-full h-full object-cover">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <!-- Content -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="text-center text-white max-w-4xl px-4">
+        <div class="flex items-center justify-between mb-12 w-full max-w-2xl mx-auto">
+          <button class="flex items-center space-x-2 text-white/70 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+
+
+
+          <button class="flex items-center space-x-2 text-white/70 hover:text-white transition-colors">
+            <span class="text-sm font-medium">READ NEXT</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Judul -->
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+          Judul Artikel Kamu di Sini
+        </h1>
+
+        <!-- Author -->
+        <div class="mb-8">
+          <p class="text-white/80 text-lg">by <span class="font-medium text-white">Nama Penulis</span></p>
+          <p class="text-white/60 text-sm mt-2">SEPTEMBER 24TH, 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer">
+      <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Article Content -->
+  <main class="max-w-4xl mx-auto px-4 py-12 bg-white">
+
+    <article class="prose prose-lg max-w-none">
+      <!-- Dummy text -->
+      <div class="bg-green-50 p-6 rounded-lg mb-8">
+        <p class="text-lg font-medium text-green-900 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+          Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+        </p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+      </p>
+
+      <blockquote class="bg-green-50 border-l-4 border-green-600 pl-8 py-6 my-8 text-center">
+        <p class="text-xl font-medium text-green-900 leading-relaxed mb-4">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+        </p>
+      </blockquote>
+
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <p class="text-gray-600 leading-relaxed">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </article>
+  </main>
+
+
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
+      <!-- Kolom 1: Tentang / Branding -->
+      <div class="space-y-4">
+        <img src="assets/logos/logo.PNG" alt="Logo SMKN Juara" class="w-32 object-contain">
+        <p class="text-sm leading-relaxed text-white/90">
+          SMKN Juara berkomitmen memberikan pendidikan vokasi unggul, inovatif, dan adaptif untuk masa depan yang
+          berkelanjutan.
+        </p>
+      </div>
+
+      <!-- Kolom 2: Link Navigasi -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg">Navigasi</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-green transition">Beranda</a></li>
+          <li><a href="#" class="hover:text-green transition">Tentang Kami</a></li>
+          <li><a href="#" class="hover:text-green transition">Kompetensi Keahlian</a></li>
+          <li><a href="#" class="hover:text-green transition">Fasilitas</a></li>
+          <li><a href="#" class="hover:text-green transition">Berita</a></li>
+          <li><a href="#" class="hover:text-green transition">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Kontak & Media Sosial -->
+      <div class="space-y-4">
+        <h4 class="font-semibold text-lg">Hubungi Kami</h4>
+        <p class="text-sm">Alamat: Jl. Contoh No. 123, Kota, Provinsi</p>
+        <p class="text-sm">Telepon: (021) 123-4567</p>
+        <p class="text-sm">Email: info@smknjuara.sch.id</p>
+        <div class="flex space-x-4 mt-2">
+          <a href="#" class="text-white hover:text-green transition"><svg class="w-5 h-5" fill="currentColor"
+              viewBox="0 0 24 24">…icon FB…</svg></a>
+          <a href="#" class="text-white hover:text-green transition"><svg class="w-5 h-5" fill="currentColor"
+              viewBox="0 0 24 24">…icon Twitter…</svg></a>
+          <a href="#" class="text-white hover:text-green transition"><svg class="w-5 h-5" fill="currentColor"
+              viewBox="0 0 24 24">…icon Instagram…</svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white/30 mt-8">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-white/80">
+        <p>© 2025 SMKN Juara. Seluruh hak cipta dilindungi.</p>
+        <div class="space-x-4 mt-2 md:mt-0">
+          <a href="#" class="hover:text-green transition">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-green transition">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // Simple scroll effect for social sharing buttons
+    window.addEventListener('scroll', function () {
+      const socialButtons = document.querySelector('.fixed.left-4');
+      if (window.scrollY > window.innerHeight) {
+        socialButtons?.classList.remove('hidden');
+      } else {
+        socialButtons?.classList.add('hidden');
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Smooth scroll to content when click scroll indicator
+    document.querySelector('.animate-bounce')?.addEventListener('click', function () {
+      document.querySelector('main').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
+</html>
