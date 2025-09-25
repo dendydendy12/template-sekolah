@@ -7,17 +7,67 @@
   <title>Lorem Ipsum</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-    
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body class="bg-gray-50 text-gray-900">
 
-<!-- Navigation -->
-<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-6 py-3">
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-6 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
+        <div class="flex flex-col leading-tight">
+          <span class="font-black text-[#117554] text-2xl tracking-wide">SMKN</span>
+          <span class="font-light text-[#117554] text-sm">Juara Negeri</span>
+        </div>
+      </div>
+
+      <!-- Menu Desktop -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Beranda</a>
+        <a href="#about" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Tentang
+          Kami</a>
+        <a href="#kompetensikeahlian"
+          class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Kompetensi Keahlian</a>
+        <a href="#fasilitas"
+          class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Fasilitas</a>
+        <a href="#article" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Berita</a>
+        <a href="#" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">E-Learning</a>
+      </div>
+
+      <!-- Buttons Desktop -->
+      <div class="hidden md:flex items-center space-x-3">
+        <button
+          class="border border-gray-300 text-black px-4 py-2 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
+          PPDB
+        </button>
+        <button class="bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800 transition-colors text-sm">
+          Hubungi Kami
+        </button>
+      </div>
+
+      <!-- Hamburger Mobile -->
+      <div class="md:hidden flex items-center">
+        <button id="hamburgerBtn" class="flex flex-col justify-between w-6 h-6">
+          <span class="block w-full h-0.5 bg-black"></span>
+          <span class="block w-full h-0.5 bg-black"></span>
+          <span class="block w-full h-0.5 bg-black"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay Menu -->
+  <div id="mobileOverlay"
+    class="fixed inset-0 bg-white z-50 -translate-x-full transition-transform duration-500 flex flex-col p-8">
+    <!-- Close Button -->
+    <button id="closeOverlay" class="absolute top-6 right-6 text-3xl text-black font-normal">&times;</button>
+
     <!-- Logo -->
-    <div class="flex items-center space-x-3">
+    <div class="absolute top-6 left-6 flex items-center space-x-3">
       <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
       <div class="flex flex-col leading-tight">
         <span class="font-black text-[#117554] text-2xl tracking-wide">SMKN</span>
@@ -25,181 +75,147 @@
       </div>
     </div>
 
-    <!-- Menu Desktop -->
-    <div class="hidden md:flex items-center space-x-8">
-      <a href="index.html" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Beranda</a>
-      <a href="#about" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Tentang Kami</a>
-      <a href="#kompetensikeahlian" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Kompetensi Keahlian</a>
-      <a href="#fasilitas" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Fasilitas</a>
-      <a href="#article" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">Berita</a>
-      <a href="#" class="text-black hover:text-emerald-700 font-normal text-sm transition-colors">E-Learning</a>
-    </div>
+    <!-- Mobile Menu Links -->
+    <div class="flex flex-col space-y-6 text-left mt-24 animate-slideIn">
+      <a href="index.html" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Beranda</a>
+      <a href="#about" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Tentang Kami</a>
+      <a href="#kompetensikeahlian"
+        class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Kompetensi Keahlian</a>
+      <a href="#fasilitas" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Fasilitas</a>
+      <a href="#article" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Berita</a>
+      <a href="#" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">E-Learning</a>
 
-    <!-- Buttons Desktop -->
-    <div class="hidden md:flex items-center space-x-3">
-      <button class="border border-gray-300 text-black px-4 py-2 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
-        PPDB
-      </button>
-      <button class="bg-emerald-700 text-white px-5 py-2 rounded-full hover:bg-emerald-800 transition-colors text-sm">
-        Hubungi Kami
-      </button>
-    </div>
-
-    <!-- Hamburger Mobile -->
-    <div class="md:hidden flex items-center">
-      <button id="hamburgerBtn" class="flex flex-col justify-between w-6 h-6">
-        <span class="block w-full h-0.5 bg-black"></span>
-        <span class="block w-full h-0.5 bg-black"></span>
-        <span class="block w-full h-0.5 bg-black"></span>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<!-- Mobile Overlay Menu -->
-<div id="mobileOverlay" class="fixed inset-0 bg-white z-50 -translate-x-full transition-transform duration-500 flex flex-col p-8">
-  <!-- Close Button -->
-  <button id="closeOverlay" class="absolute top-6 right-6 text-3xl text-black font-normal">&times;</button>
-
-  <!-- Logo -->
-  <div class="absolute top-6 left-6 flex items-center space-x-3">
-    <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
-    <div class="flex flex-col leading-tight">
-      <span class="font-black text-[#117554] text-2xl tracking-wide">SMKN</span>
-      <span class="font-light text-[#117554] text-sm">Juara Negeri</span>
+      <!-- Mobile Buttons -->
+      <div class="flex flex-col space-y-3 mt-6">
+        <button
+          class="border border-gray-300 text-black px-6 py-3 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
+          PPDB
+        </button>
+        <button class="bg-emerald-700 text-white px-6 py-3 rounded-full hover:bg-emerald-800 transition-colors text-sm">
+          Hubungi Kami
+        </button>
+      </div>
     </div>
   </div>
 
-  <!-- Mobile Menu Links -->
-  <div class="flex flex-col space-y-6 text-left mt-24 animate-slideIn">
-    <a href="index.html" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Beranda</a>
-    <a href="#about" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Tentang Kami</a>
-    <a href="#kompetensikeahlian" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Kompetensi Keahlian</a>
-    <a href="#fasilitas" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Fasilitas</a>
-    <a href="#article" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">Berita</a>
-    <a href="#" class="text-black hover:text-emerald-700 font-normal text-lg transition-colors">E-Learning</a>
+  <style>
+    /* Simple slide-in animation for mobile menu links */
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
 
-    <!-- Mobile Buttons -->
-    <div class="flex flex-col space-y-3 mt-6">
-      <button class="border border-gray-300 text-black px-6 py-3 rounded-full hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm">
-        PPDB
-      </button>
-      <button class="bg-emerald-700 text-white px-6 py-3 rounded-full hover:bg-emerald-800 transition-colors text-sm">
-        Hubungi Kami
-      </button>
-    </div>
-  </div>
-</div>
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-<style>
-  /* Simple slide-in animation for mobile menu links */
-  @keyframes slideIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  .animate-slideIn a {
-    animation: slideIn 0.4s forwards;
-  }
-</style>
+    .animate-slideIn a {
+      animation: slideIn 0.4s forwards;
+    }
+  </style>
 
-<script>
-  const hamburgerBtn = document.getElementById('hamburgerBtn');
-  const mobileOverlay = document.getElementById('mobileOverlay');
-  const closeOverlay = document.getElementById('closeOverlay');
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const closeOverlay = document.getElementById('closeOverlay');
 
-  hamburgerBtn.addEventListener('click', () => {
-    mobileOverlay.classList.remove('-translate-x-full');
-  });
+    hamburgerBtn.addEventListener('click', () => {
+      mobileOverlay.classList.remove('-translate-x-full');
+    });
 
-  closeOverlay.addEventListener('click', () => {
-    mobileOverlay.classList.add('-translate-x-full');
-  });
-</script>
+    closeOverlay.addEventListener('click', () => {
+      mobileOverlay.classList.add('-translate-x-full');
+    });
+  </script>
 
   <!-- Hero Section -->
-<div class="relative h-screen bg-green-900 overflow-hidden">
-  <!-- Background Image -->
-  <img src="assets/image/bg-sekolah.PNG" alt="Hero" class="w-full h-full object-cover">
+  <div class="relative h-screen bg-green-900 overflow-hidden">
+    <!-- Background Image -->
+    <img src="assets/image/bg-sekolah.PNG" alt="Hero" class="w-full h-full object-cover">
 
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-  <!-- Content -->
-  <div class="absolute inset-0 flex items-center justify-center px-4 md:px-12">
-    <div class="text-center text-white max-w-full md:max-w-4xl">
-      <!-- Navigation Buttons -->
-      <div class="flex flex-col md:flex-row items-center justify-between mb-8 md:mb-12 w-full max-w-xl mx-auto space-y-2 md:space-y-0">
-        <button class="flex items-center space-x-2 text-white/70 hover:text-white transition-colors">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd"
-              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
+    <!-- Content -->
+    <div class="absolute inset-0 flex items-center justify-center px-4 md:px-12">
+      <div class="text-center text-white max-w-full md:max-w-4xl">
+        <!-- Navigation Buttons -->
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mb-8 md:mb-12 w-full max-w-xl mx-auto space-y-2 md:space-y-0">
+          <button class="flex items-center space-x-2 text-white/70 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
 
-        <button class="flex items-center space-x-2 text-white/70 hover:text-white transition-colors">
-          <span class="text-sm font-medium">READ NEXT</span>
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd"
-              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
+          <button class="flex items-center space-x-2 text-white/70 hover:text-white transition-colors">
+            <span class="text-sm font-medium">READ NEXT</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Judul -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
+          Judul Artikel Kamu di Sini
+        </h1>
+
+        <!-- Author -->
+        <div class="mb-6 md:mb-8">
+          <p class="text-white/80 text-base sm:text-lg">by <span class="font-medium text-white">Nama Penulis</span></p>
+          <p class="text-white/60 text-sm mt-1">SEPTEMBER 24TH, 2025</p>
+        </div>
       </div>
+    </div>
 
-      <!-- Judul -->
-      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
-        Judul Artikel Kamu di Sini
-      </h1>
-
-      <!-- Author -->
-      <div class="mb-6 md:mb-8">
-        <p class="text-white/80 text-base sm:text-lg">by <span class="font-medium text-white">Nama Penulis</span></p>
-        <p class="text-white/60 text-sm mt-1">SEPTEMBER 24TH, 2025</p>
-      </div>
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer">
+      <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
     </div>
   </div>
 
-  <!-- Scroll Indicator -->
-  <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer">
-    <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-    </svg>
-  </div>
-</div>
+  <!-- Article Content -->
+  <main class="max-w-full md:max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12 bg-white">
 
-<!-- Article Content -->
-<main class="max-w-full md:max-w-4xl mx-auto px-4 md:px-6 py-8 md:py-12 bg-white">
+    <article class="prose prose-lg max-w-full md:max-w-none">
+      <!-- Dummy text -->
+      <div class="bg-green-50 p-4 md:p-6 rounded-lg mb-6 md:mb-8">
+        <p class="text-base md:text-lg font-medium text-green-900 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+          Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+        </p>
+      </div>
 
-  <article class="prose prose-lg max-w-full md:max-w-none">
-    <!-- Dummy text -->
-    <div class="bg-green-50 p-4 md:p-6 rounded-lg mb-6 md:mb-8">
-      <p class="text-base md:text-lg font-medium text-green-900 leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-        Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+      <p class="text-gray-700 leading-relaxed mb-4 md:mb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
       </p>
-    </div>
 
-    <p class="text-gray-700 leading-relaxed mb-4 md:mb-6">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua.
-    </p>
+      <blockquote class="bg-green-50 border-l-4 border-green-600 pl-6 md:pl-8 py-4 md:py-6 my-6 md:my-8 text-center">
+        <p class="text-lg md:text-xl font-medium text-green-900 leading-relaxed mb-2 md:mb-4">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+        </p>
+      </blockquote>
 
-    <blockquote class="bg-green-50 border-l-4 border-green-600 pl-6 md:pl-8 py-4 md:py-6 my-6 md:my-8 text-center">
-      <p class="text-lg md:text-xl font-medium text-green-900 leading-relaxed mb-2 md:mb-4">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+      <p class="text-gray-700 leading-relaxed mb-4 md:mb-6">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
-    </blockquote>
 
-    <p class="text-gray-700 leading-relaxed mb-4 md:mb-6">
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-
-    <p class="text-gray-600 leading-relaxed">
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </p>
-  </article>
-</main>
+      <p class="text-gray-600 leading-relaxed">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </article>
+  </main>
 
   <footer class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
