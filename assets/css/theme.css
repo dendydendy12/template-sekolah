@@ -1,0 +1,58 @@
+:root {
+  --primary: #10b981; /* Emerald yang lebih cerah */
+  --secondary: #059669;
+  --accent: #fbbf24; /* Amber yang lebih soft */
+  --background: #ffffff; /* Pure white untuk konsistensi */
+  --card-bg: #f9fafb; /* Light gray untuk card */
+  --card-border: #e5e7eb;
+  --text: #111827;
+  --text-muted: #6b7280;
+}
+
+/* Theme Hijau - Fresh & Natural */
+.theme-hijau {
+  --primary: #059669; /* Emerald 600 */
+  --secondary: #10b981; /* Emerald 500 */
+  --accent: #fbbf24; /* Amber 400 */
+  --background: #ffffff; /* Pure white - konsisten */
+  --card-bg: #f0fdf4; /* Emerald 50 untuk card */
+  --card-border: #d1fae5; /* Emerald 200 */
+  --text: #064e3b; /* Emerald 900 */
+  --text-muted: #6b7280;
+}
+
+/* Theme Biru - Clean & Professional */
+.theme-biru {
+  --primary: #3b82f6; /* Blue 500 */
+  --secondary: #60a5fa; /* Blue 400 */
+  --accent: #38bdf8; /* Sky 400 */
+  --background: #ffffff; /* Pure white - konsisten */
+  --card-bg: #eff6ff; /* Blue 50 untuk card */
+  --card-border: #dbeafe; /* Blue 200 */
+  --text: #1e3a8a; /* Blue 900 */
+  --text-muted: #64748b;
+}
+
+/* Theme Ungu - Creative & Modern */
+.theme-ungu {
+  --primary: #8b5cf6; /* Violet 500 */
+  --secondary: #a78bfa; /* Violet 400 */
+  --accent: #ec4899; /* Pink 500 */
+  --background: #ffffff; /* Pure white - konsisten */
+  --card-bg: #faf5ff; /* Violet 50 untuk card */
+  --card-border: #e9d5ff; /* Violet 200 */
+  --text: #5b21b6; /* Violet 800 */
+  --text-muted: #6b7280;
+}
+
+/* Theme Oranye - Warm & Energetic */
+.theme-oranye {
+  --primary: #f97316; /* Orange 500 */
+  --secondary: #fb923c; /* Orange 400 */
+  --accent: #fbbf24; /* Amber 400 */
+  --background: #ffffff; /* Pure white - konsisten */
+  --card-bg: #fff7ed; /* Orange 50 untuk card */
+  --card-border: #fed7aa; /* Orange 200 */
+  --text: #9a3412; /* Orange 800 */
+  --text-muted: #78716c;
+}
