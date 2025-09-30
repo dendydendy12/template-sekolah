@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jurusan Sekolah</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="responsif.css">
+
 
   <!-- Tailwind CSS tambahan untuk responsif -->
   <style>
@@ -39,10 +39,9 @@
       },
     }
   </script>
-
-
+  <link rel="stylesheet" href="responsif.css">
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -51,7 +50,7 @@
       font-family: 'Inter', sans-serif;
     }
   </style>
-  <link rel="stylesheet" href="assets/css/theme.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -298,11 +297,8 @@
     </div>
   </div>
 
-
   <!-- Supaya konten tidak ketutupan navbar -->
   <div class="pt-20"></div>
-
-
 
   <!-- Hero Section -->
   <div class="relative bg-[var(--primary)] overflow-hidden rounded-3xl mx-6 mt-6">
@@ -474,9 +470,6 @@
     </div>
   </section>
 
-
-
-
   <section class="relative">
     <!-- Bagian atas background -->
     <div class="bg-[var(--background)] py-12 relative z-10">
@@ -570,7 +563,6 @@
     </div>
   </section>
 
-
   <!-- Partners Section -->
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-6">
@@ -638,18 +630,6 @@
   </section>
   <!--End Partners Section -->
 
-
-  <script>
-    let currentSlide = 0;
-    const slider = document.getElementById('slider');
-    const totalSlides = slider.children.length;
-
-    function slide(direction) {
-      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-  </script>
-
   <footer class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
       <!-- Kolom 1: Tentang / Branding -->
@@ -706,12 +686,20 @@
     </div>
   </footer>
 
-
   <script src="script.js"></script>
   <script src="assets/js/theme-switch.js"></script>
-
   <script src="assets/js/nav-styles.js"></script>
   <script src="assets/js/navigation.js"></script>
+  <script>
+    let currentSlide = 0;
+    const slider = document.getElementById('slider');
+    const totalSlides = slider.children.length;
+
+    function slide(direction) {
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+  </script>
 
 </body>
 
