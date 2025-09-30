@@ -9,41 +9,70 @@
   --text-muted: #6b7280;
 }
 
-/* Theme Hijau - Fresh & Natural */
+/* Theme Hijau - Fresh & Natural (versi dari gambar) */
 .theme-hijau {
-  --primary: #059669; /* Emerald 600 */
-  --secondary: #10b981; /* Emerald 500 */
-  --accent: #fbbf24; /* Amber 400 */
-  --background: #ffffff; /* Pure white - konsisten */
-  --card-bg: #f0fdf4; /* Emerald 50 untuk card */
-  --card-border: #d1fae5; /* Emerald 200 */
-  --text: #064e3b; /* Emerald 900 */
-  --text-muted: #6b7280;
+  --primary: #003d30;   /* Hijau tua pekat */
+  --secondary: #3A6F43; /* Hijau teal medium */
+  --accent: #d9cda5;    /* Krem hangat untuk aksen */
+  --background: #ffffff;/* Putih bersih konsisten */
+  --card-bg: #fffaeb;   /* Putih gading lembut */
+  --card-border: #d9cda5;/* Border krem */
+  --text: #003d30;      /* Hijau tua untuk teks utama */
+  --text-muted: #6b7280;/* Abu netral */
 }
 
-/* Theme Biru - Clean & Professional */
+
+/* Theme Biru - Clean & Professional (versi dari gambar) */
 .theme-biru {
-  --primary: #3b82f6; /* Blue 500 */
-  --secondary: #60a5fa; /* Blue 400 */
-  --accent: #38bdf8; /* Sky 400 */
-  --background: #ffffff; /* Pure white - konsisten */
-  --card-bg: #eff6ff; /* Blue 50 untuk card */
-  --card-border: #dbeafe; /* Blue 200 */
-  --text: #1e3a8a; /* Blue 900 */
+  --primary: #1e56ff;    /* Biru terang */
+  --secondary: #0000cc;  /* Biru tua */
+  --accent: #eae0c8;     /* Krem lembut sebagai aksen */
+  --background: #ffffff; /* Putih bersih */
+  --card-bg: #fff8f8;    /* Putih pucat agar soft */
+  --card-border: #eae0c8;/* Krem lembut untuk border */
+  --text: #0000cc;       /* Biru tua untuk teks utama */
+  --text-muted: #64748b; /* Abu netral tetap */
+}
+
+
+.theme-teal {
+  --primary: #4CBBA0;   /* Teal Soft */
+  --secondary: #A7FFD6; /* Mint Light */
+  --accent: #6278B0;    /* Soft Blue */
+  --background: #ffffff;
+  --card-bg: #f0fdfa;   /* Background lembut */
+  --card-border: #d1fae5;
+  --text: #2F2F5F;      /* Navy Dark */
   --text-muted: #64748b;
 }
 
-/* Theme Ungu - Creative & Modern */
-.theme-ungu {
-  --primary: #8b5cf6; /* Violet 500 */
-  --secondary: #a78bfa; /* Violet 400 */
-  --accent: #ec4899; /* Pink 500 */
-  --background: #ffffff; /* Pure white - konsisten */
-  --card-bg: #faf5ff; /* Violet 50 untuk card */
-  --card-border: #e9d5ff; /* Violet 200 */
-  --text: #5b21b6; /* Violet 800 */
+.theme-maroon {
+  --primary: #640D0D;   /* Deep Maroon */
+  --secondary: #8B1E1E; /* Red Maroon */
+  --accent: #3B0A0A;    /* Dark Maroon */
+  --background: #ffffff;
+  --card-bg: #FFF1C9;   /* Cream soft */
+  --card-border: #fcd9b6;
+  --text: #3B0A0A;      /* Dark Maroon */
   --text-muted: #6b7280;
 }
+
+
+
+
+/* Theme Ungu - Creative & Modern */
+
+.theme-ungu {
+  --primary: #6d00ff;    /* Ungu terang */
+  --secondary: #2e0066;  /* Ungu tua */
+  --accent: #e5a6ff;     /* Ungu pastel */
+  --background: #ffffff; /* Putih konsisten */
+  --card-bg: #fff0f6;    /* Ungu sangat pucat */
+  --card-border: #e5a6ff;/* Sama seperti pastel agar harmonis */
+  --text: #2e0066;       /* Ungu tua untuk kontras */
+  --text-muted: #6b7280; /* Tetap abu-abu netral */
+}
+
 
 /* Theme Oranye - Warm & Energetic */
 .theme-oranye {

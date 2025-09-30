@@ -14,247 +14,332 @@
 
 <body class="bg-gray-50 text-gray-900">
 
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 w-full shadow-md z-50 px-6 py-3"
-    style="background-color: var(--background); color: var(--text);">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center space-x-3">
-        <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
-        <div class="flex flex-col leading-tight">
-          <span class="font-black text-2xl tracking-wide" style="color: var(--primary);">SMKN</span>
-          <span class="font-light text-sm" style="color: var(--primary);">Juara Negeri</span>
-        </div>
-      </div>
-
-      <!-- Menu Desktop -->
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="index.html" class="font-normal text-sm transition-colors nav-link">Beranda</a>
-        <a href="#about" class="font-normal text-sm transition-colors nav-link">Tentang Kami</a>
-        <a href="#kompetensikeahlian" class="font-normal text-sm transition-colors nav-link">Kompetensi
-          Keahlian</a>
-        <a href="#fasilitas" class="font-normal text-sm transition-colors nav-link">Fasilitas</a>
-        <a href="#article" class="font-normal text-sm transition-colors nav-link">Berita</a>
-        <a href="#" class="font-normal text-sm transition-colors nav-link">E-Learning</a>
-      </div>
-
-      <!-- Buttons Desktop + Theme Switch -->
-      <div class="hidden md:flex items-center space-x-3">
-        <button class="btn-outline px-4 py-2 rounded-full text-sm transition-colors">PPDB</button>
-        <button class="btn-primary px-5 py-2 rounded-full text-sm transition-colors">Hubungi Kami</button>
-
-        <!-- Theme Switcher Dropdown -->
-        <div class="relative ml-2">
-          <button id="themeToggle"
-            class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-            style="background-color: var(--primary); color: var(--background); box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-            </svg>
-          </button>
-
-          <!-- Dropdown Menu -->
-          <div id="themeDropdown"
-            class="absolute right-0 mt-3 w-48 rounded-2xl overflow-hidden shadow-2xl opacity-0 invisible transition-all duration-300 transform scale-95"
-            style="background-color: var(--card-bg); border: 2px solid var(--card-border);">
-            <div class="p-3">
-              <p class="text-xs font-semibold mb-3 px-2" style="color: var(--text-muted);">PILIH TEMA</p>
-
-              <button
-                class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-2"
-                data-theme="theme-hijau">
-                <div class="w-8 h-8 rounded-full flex items-center justify-center"
-                  style="background: linear-gradient(135deg, #059669, #10b981);">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd" />
-                  </svg>
+ <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full shadow-md z-50 px-6 py-3"
+        style="background-color: var(--background); color: var(--text);">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
+                <div class="flex flex-col leading-tight">
+                    <span class="font-black text-2xl tracking-wide" style="color: var(--primary);">SMKN</span>
+                    <span class="font-light text-sm" style="color: var(--primary);">Juara Negeri</span>
                 </div>
-                <div class="text-left flex-1">
-                  <p class="font-semibold text-sm" style="color: var(--text);">Hijau</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Fresh & Natural</p>
-                </div>
-              </button>
-
-              <button
-                class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-2"
-                data-theme="theme-biru">
-                <div class="w-8 h-8 rounded-full flex items-center justify-center"
-                  style="background: linear-gradient(135deg, #3b82f6, #60a5fa);">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </div>
-                <div class="text-left flex-1">
-                  <p class="font-semibold text-sm" style="color: var(--text);">Biru</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Clean & Professional</p>
-                </div>
-              </button>
-
-              <button
-                class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-2"
-                data-theme="theme-ungu">
-                <div class="w-8 h-8 rounded-full flex items-center justify-center"
-                  style="background: linear-gradient(135deg, #8b5cf6, #a78bfa);">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </div>
-                <div class="text-left flex-1">
-                  <p class="font-semibold text-sm" style="color: var(--text);">Ungu</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Creative & Modern</p>
-                </div>
-              </button>
-
-              <button
-                class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02]"
-                data-theme="theme-oranye">
-                <div class="w-8 h-8 rounded-full flex items-center justify-center"
-                  style="background: linear-gradient(135deg, #f97316, #fb923c);">
-                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </div>
-                <div class="text-left flex-1">
-                  <p class="font-semibold text-sm" style="color: var(--text);">Oranye</p>
-                  <p class="text-xs" style="color: var(--text-muted);">Warm & Energetic</p>
-                </div>
-              </button>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Hamburger Mobile -->
-      <div class="md:hidden flex items-center">
-        <button id="hamburgerBtn" class="flex flex-col justify-between w-6 h-6">
-          <span class="block w-full h-0.5" style="background-color: var(--text);"></span>
-          <span class="block w-full h-0.5" style="background-color: var(--text);"></span>
-          <span class="block w-full h-0.5" style="background-color: var(--text);"></span>
-        </button>
-      </div>
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="font-normal text-sm transition-colors nav-link">Beranda</a>
+                <a href="#about" class="font-normal text-sm transition-colors nav-link">Tentang Kami</a>
+                <a href="#kompetensikeahlian" class="font-normal text-sm transition-colors nav-link">Kompetensi
+                    Keahlian</a>
+                <a href="#fasilitas" class="font-normal text-sm transition-colors nav-link">Fasilitas</a>
+                <a href="#article" class="font-normal text-sm transition-colors nav-link">Berita</a>
+                <a href="#" class="font-normal text-sm transition-colors nav-link">E-Learning</a>
+            </div>
+
+            <!-- Buttons Desktop + Theme Switch -->
+            <div class="hidden md:flex items-center space-x-3">
+                <button class="btn-outline px-4 py-2 rounded-full text-sm transition-colors">PPDB</button>
+                <button class="btn-primary px-5 py-2 rounded-full text-sm transition-colors">Hubungi Kami</button>
+
+                <!-- Theme Switcher Dropdown -->
+                <div class="relative ml-2">
+                    <button id="themeToggle"
+                        class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                        style="background-color: var(--primary); color: var(--background); box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div id="themeDropdown"
+                        class="absolute right-0 mt-3 w-48 rounded-2xl overflow-hidden shadow-2xl opacity-0 invisible transition-all duration-300 transform scale-95"
+                        style="background-color: var(--card-bg); border: 2px solid var(--card-border);">
+                        <div class="p-3">
+                            <p class="text-xs font-semibold mb-3 px-2" style="color: var(--text-muted);">PILIH TEMA</p>
+
+                            <button
+                                class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-2"
+                                data-theme="theme-hijau">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center"
+                                    style="background: linear-gradient(135deg, #059669, #10b981);">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="text-left flex-1">
+                                    <p class="font-semibold text-sm" style="color: var(--text);">Hijau</p>
+                                    <p class="text-xs" style="color: var(--text-muted);">Fresh & Natural</p>
+                                </div>
+                            </button>
+
+                            <button
+                                class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-2"
+                                data-theme="theme-biru">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center"
+                                    style="background: linear-gradient(135deg, #3b82f6, #60a5fa);">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="text-left flex-1">
+                                    <p class="font-semibold text-sm" style="color: var(--text);">Biru</p>
+                                    <p class="text-xs" style="color: var(--text-muted);">Clean & Professional</p>
+                                </div>
+                            </button>
+
+                            <!-- Theme Option Teal - Desktop -->
+<button
+    class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-2"
+    data-theme="theme-teal">
+    <div class="w-8 h-8 rounded-full flex items-center justify-center"
+        style="background: linear-gradient(135deg, #3fb8af, #5d6cc1);">
+        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+        </svg>
     </div>
-  </nav>
-
-  <!-- Mobile Overlay Menu -->
-  <div id="mobileOverlay" class="fixed inset-0 z-50 -translate-x-full transition-transform duration-500"
-    style="background-color: var(--background); color: var(--text);">
-
-    <div class="h-full overflow-y-auto">
-      <div class="flex flex-col min-h-full p-8">
-
-        <!-- Close Button -->
-        <button id="closeOverlay" class="absolute top-6 right-6 text-3xl font-normal z-10"
-          style="color: var(--text);">&times;</button>
-
-        <!-- Logo -->
-        <div class="flex items-center space-x-3 mb-16">
-          <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
-          <div class="flex flex-col leading-tight">
-            <span class="font-black text-2xl tracking-wide" style="color: var(--primary);">SMKN</span>
-            <span class="font-light text-sm" style="color: var(--primary);">Juara Negeri</span>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Links -->
-        <div class="flex flex-col space-y-6">
-          <a href="index.html" class="font-normal text-lg transition-colors nav-link-mobile">Beranda</a>
-          <a href="#about" class="font-normal text-lg transition-colors nav-link-mobile">Tentang Kami</a>
-          <a href="#kompetensikeahlian" class="font-normal text-lg transition-colors nav-link-mobile">Kompetensi
-            Keahlian</a>
-          <a href="#fasilitas" class="font-normal text-lg transition-colors nav-link-mobile">Fasilitas</a>
-          <a href="#article" class="font-normal text-lg transition-colors nav-link-mobile">Berita</a>
-          <a href="#" class="font-normal text-lg transition-colors nav-link-mobile">E-Learning</a>
-        </div>
-
-        <!-- Mobile Buttons -->
-        <div class="flex flex-col space-y-3 mt-8">
-          <button class="btn-outline-mobile px-6 py-3 rounded-full text-sm transition-colors">PPDB</button>
-          <button class="btn-primary-mobile px-6 py-3 rounded-full text-sm transition-colors">Hubungi
-            Kami</button>
-        </div>
-
-        <!-- Theme Switcher Mobile -->
-        <div class="mt-8 pb-8">
-          <p class="text-xs font-semibold mb-3" style="color: var(--text-muted);">PILIH TEMA</p>
-          <div class="space-y-2">
-            <button class="theme-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200"
-              style="background-color: var(--card-bg); border: 1px solid var(--card-border);" data-theme="theme-hijau">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                style="background: linear-gradient(135deg, #059669, #10b981);">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd" />
-                </svg>
-              </div>
-              <div class="text-left flex-1">
-                <p class="font-semibold text-sm" style="color: var(--text);">Hijau</p>
-                <p class="text-xs" style="color: var(--text-muted);">Fresh & Natural</p>
-              </div>
-            </button>
-
-            <button class="theme-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200"
-              style="background-color: var(--card-bg); border: 1px solid var(--card-border);" data-theme="theme-biru">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                style="background: linear-gradient(135deg, #3b82f6, #60a5fa);">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd" />
-                </svg>
-              </div>
-              <div class="text-left flex-1">
-                <p class="font-semibold text-sm" style="color: var(--text);">Biru</p>
-                <p class="text-xs" style="color: var(--text-muted);">Clean & Professional</p>
-              </div>
-            </button>
-
-            <button class="theme-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200"
-              style="background-color: var(--card-bg); border: 1px solid var(--card-border);" data-theme="theme-ungu">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                style="background: linear-gradient(135deg, #8b5cf6, #a78bfa);">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd" />
-                </svg>
-              </div>
-              <div class="text-left flex-1">
-                <p class="font-semibold text-sm" style="color: var(--text);">Ungu</p>
-                <p class="text-xs" style="color: var(--text-muted);">Creative & Modern</p>
-              </div>
-            </button>
-
-            <button class="theme-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200"
-              style="background-color: var(--card-bg); border: 1px solid var(--card-border);" data-theme="theme-oranye">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-                style="background: linear-gradient(135deg, #f97316, #fb923c);">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd" />
-                </svg>
-              </div>
-              <div class="text-left flex-1">
-                <p class="font-semibold text-sm" style="color: var(--text);">Oranye</p>
-                <p class="text-xs" style="color: var(--text-muted);">Warm & Energetic</p>
-              </div>
-            </button>
-          </div>
-        </div>
-
-      </div>
+    <div class="text-left flex-1">
+        <p class="font-semibold text-sm" style="color: var(--text);">Teal</p>
+        <p class="text-xs" style="color: var(--text-muted);">Fresh & Modern</p>
     </div>
-  </div>
+</button>
+
+
+<!-- Theme Option Maroon - Desktop -->
+<button
+    class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-2"
+    data-theme="theme-maroon">
+    <div class="w-8 h-8 rounded-full flex items-center justify-center"
+        style="background: linear-gradient(135deg, #3B0A0A, #640D0D, #8B1E1E, #FFF1C9);">
+        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+        </svg>
+    </div>
+    <div class="text-left flex-1">
+        <p class="font-semibold text-sm" style="color: var(--text);">Maroon</p>
+        <p class="text-xs" style="color: var(--text-muted);">Elegant & Bold</p>
+    </div>
+</button>
+
+
+                            <button
+                                class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-2"
+                                data-theme="theme-ungu">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center"
+                                    style="background: linear-gradient(135deg, #8b5cf6, #a78bfa);">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="text-left flex-1">
+                                    <p class="font-semibold text-sm" style="color: var(--text);">Ungu</p>
+                                    <p class="text-xs" style="color: var(--text-muted);">Creative & Modern</p>
+                                </div>
+                            </button>
+
+                            <button
+                                class="theme-btn w-full flex items-center gap-3 px-3 py-2.5 rounded-xl transition-all duration-200 hover:scale-[1.02]"
+                                data-theme="theme-oranye">
+                                <div class="w-8 h-8 rounded-full flex items-center justify-center"
+                                    style="background: linear-gradient(135deg, #f97316, #fb923c);">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="text-left flex-1">
+                                    <p class="font-semibold text-sm" style="color: var(--text);">Oranye</p>
+                                    <p class="text-xs" style="color: var(--text-muted);">Warm & Energetic</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburger Mobile -->
+            <div class="md:hidden flex items-center">
+                <button id="hamburgerBtn" class="flex flex-col justify-between w-6 h-6">
+                    <span class="block w-full h-0.5" style="background-color: var(--text);"></span>
+                    <span class="block w-full h-0.5" style="background-color: var(--text);"></span>
+                    <span class="block w-full h-0.5" style="background-color: var(--text);"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay Menu -->
+    <div id="mobileOverlay" class="fixed inset-0 z-50 -translate-x-full transition-transform duration-500"
+        style="background-color: var(--background); color: var(--text);">
+
+        <div class="h-full overflow-y-auto">
+            <div class="flex flex-col min-h-full p-8">
+
+                <!-- Close Button -->
+                <button id="closeOverlay" class="absolute top-6 right-6 text-3xl font-normal z-10"
+                    style="color: var(--text);">&times;</button>
+
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 mb-16">
+                    <img src="assets/image/logo.png" alt="logo" class="w-10 h-10 object-contain">
+                    <div class="flex flex-col leading-tight">
+                        <span class="font-black text-2xl tracking-wide" style="color: var(--primary);">SMKN</span>
+                        <span class="font-light text-sm" style="color: var(--primary);">Juara Negeri</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Links -->
+                <div class="flex flex-col space-y-6">
+                    <a href="#" class="font-normal text-lg transition-colors nav-link-mobile">Beranda</a>
+                    <a href="#about" class="font-normal text-lg transition-colors nav-link-mobile">Tentang Kami</a>
+                    <a href="#kompetensikeahlian"
+                        class="font-normal text-lg transition-colors nav-link-mobile">Kompetensi Keahlian</a>
+                    <a href="#fasilitas" class="font-normal text-lg transition-colors nav-link-mobile">Fasilitas</a>
+                    <a href="#article" class="font-normal text-lg transition-colors nav-link-mobile">Berita</a>
+                    <a href="#" class="font-normal text-lg transition-colors nav-link-mobile">E-Learning</a>
+                </div>
+
+                <!-- Mobile Buttons -->
+                <div class="flex flex-col space-y-3 mt-8">
+                    <button class="btn-outline-mobile px-6 py-3 rounded-full text-sm transition-colors">PPDB</button>
+                    <button class="btn-primary-mobile px-6 py-3 rounded-full text-sm transition-colors">Hubungi
+                        Kami</button>
+                </div>
+
+                <!-- Theme Switcher Mobile -->
+                <div class="mt-8 pb-8">
+                    <p class="text-xs font-semibold mb-3" style="color: var(--text-muted);">PILIH TEMA</p>
+                    <div class="space-y-2">
+                        <button
+                            class="theme-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200"
+                            style="background-color: var(--card-bg); border: 1px solid var(--card-border);"
+                            data-theme="theme-hijau">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+                                style="background: linear-gradient(135deg, #059669, #10b981);">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="text-left flex-1">
+                                <p class="font-semibold text-sm" style="color: var(--text);">Hijau</p>
+                                <p class="text-xs" style="color: var(--text-muted);">Fresh & Natural</p>
+                            </div>
+                        </button>
+
+
+                        <!-- Theme Option Teal - Mobile -->
+<button
+    class="theme-btn w-full flex items-center gap-3 px-3 py-3 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-3"
+    data-theme="theme-teal">
+    <div class="w-10 h-10 rounded-full flex items-center justify-center"
+        style="background: linear-gradient(135deg, #3fb8af, #5d6cc1);">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+        </svg>
+    </div>
+    <div class="text-left flex-1">
+        <p class="font-semibold text-base" style="color: var(--text);">Teal</p>
+        <p class="text-sm" style="color: var(--text-muted);">Fresh & Modern</p>
+    </div>
+</button>
+
+<!-- Theme Option Maroon - Mobile -->
+<button
+    class="theme-btn w-full flex items-center gap-3 px-3 py-3 rounded-xl transition-all duration-200 hover:scale-[1.02] mb-3"
+    data-theme="theme-maroon">
+    <div class="w-10 h-10 rounded-full flex items-center justify-center"
+        style="background: linear-gradient(135deg, #3B0A0A, #640D0D, #8B1E1E, #FFF1C9);">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+        </svg>
+    </div>
+    <div class="text-left flex-1">
+        <p class="font-semibold text-base" style="color: var(--text);">Maroon</p>
+        <p class="text-sm" style="color: var(--text-muted);">Elegant & Bold</p>
+    </div>
+</button>
+
+
+
+                        <button
+                            class="theme-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200"
+                            style="background-color: var(--card-bg); border: 1px solid var(--card-border);"
+                            data-theme="theme-biru">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+                                style="background: linear-gradient(135deg, #3b82f6, #60a5fa);">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="text-left flex-1">
+                                <p class="font-semibold text-sm" style="color: var(--text);">Biru</p>
+                                <p class="text-xs" style="color: var(--text-muted);">Clean & Professional</p>
+                            </div>
+                        </button>
+
+                        <button
+                            class="theme-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200"
+                            style="background-color: var(--card-bg); border: 1px solid var(--card-border);"
+                            data-theme="theme-ungu">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+                                style="background: linear-gradient(135deg, #8b5cf6, #a78bfa);">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="text-left flex-1">
+                                <p class="font-semibold text-sm" style="color: var(--text);">Ungu</p>
+                                <p class="text-xs" style="color: var(--text-muted);">Creative & Modern</p>
+                            </div>
+                        </button>
+
+                        <button
+                            class="theme-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200"
+                            style="background-color: var(--card-bg); border: 1px solid var(--card-border);"
+                            data-theme="theme-oranye">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+                                style="background: linear-gradient(135deg, #f97316, #fb923c);">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="text-left flex-1">
+                                <p class="font-semibold text-sm" style="color: var(--text);">Oranye</p>
+                                <p class="text-xs" style="color: var(--text-muted);">Warm & Energetic</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
   <!-- Hero Section -->
   <div class="relative h-screen bg-green-900 overflow-hidden">
