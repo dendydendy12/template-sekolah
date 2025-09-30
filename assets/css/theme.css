@@ -1,12 +1,12 @@
 :root {
-  --primary: #10b981; /* Emerald yang lebih cerah */
-  --secondary: #059669;
-  --accent: #fbbf24; /* Amber yang lebih soft */
-  --background: #ffffff; /* Pure white untuk konsistensi */
-  --card-bg: #f9fafb; /* Light gray untuk card */
-  --card-border: #e5e7eb;
-  --text: #111827;
-  --text-muted: #6b7280;
+  --primary: #1e56ff;    /* Biru terang */
+  --secondary: #0000cc;  /* Biru tua */
+  --accent: #eae0c8;     /* Krem lembut sebagai aksen */
+  --background: #ffffff; /* Putih bersih */
+  --card-bg: #fff8f8;    /* Putih pucat agar soft */
+  --card-border: #eae0c8;/* Krem lembut untuk border */
+  --text: #0000cc;       /* Biru tua untuk teks utama */
+  --text-muted: #64748b; /* Abu netral tetap */
 }
 
 /* Theme Hijau - Fresh & Natural (versi dari gambar) */
