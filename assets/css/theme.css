@@ -1,87 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
 :root {
-  --primary: #1e56ff;    /* Biru terang */
-  --secondary: #0000cc;  /* Biru tua */
-  --accent: #eae0c8;     /* Krem lembut sebagai aksen */
-  --background: #ffffff; /* Putih bersih */
-  --card-bg: #fff8f8;    /* Putih pucat agar soft */
-  --card-border: #eae0c8;/* Krem lembut untuk border */
-  --text: #0000cc;       /* Biru tua untuk teks utama */
-  --text-muted: #64748b; /* Abu netral tetap */
+  --primary: #1e56ff;
+  --secondary: #0000cc;
+  --accent: #eae0c8;
+  --background: #ffffff;
+  --card-bg: #fff8f8;
+  --card-border: #eae0c8;
+  --text: #0000cc;
+  --text-muted: #64748b;
+  --primary-light: #7c9bff;
+  --primary-dark: #0033cc;
+  --primary-gradient: linear-gradient(135deg, #7c9bff 0%, #4a7aff 25%, #1e56ff 60%, #0044ff 100%);
 }
 
-/* Theme Hijau - Fresh & Natural (versi dari gambar) */
 .theme-hijau {
-  --primary: #003d30;   /* Hijau tua pekat */
-  --secondary: #3A6F43; /* Hijau teal medium */
-  --accent: #d9cda5;    /* Krem hangat untuk aksen */
-  --background: #ffffff;/* Putih bersih konsisten */
-  --card-bg: #fffaeb;   /* Putih gading lembut */
-  --card-border: #d9cda5;/* Border krem */
-  --text: #003d30;      /* Hijau tua untuk teks utama */
-  --text-muted: #6b7280;/* Abu netral */
+  --primary: #003d30;
+  --secondary: #3A6F43;
+  --accent: #d9cda5;
+  --background: #ffffff;
+  --card-bg: #fffaeb;
+  --card-border: #d9cda5;
+  --text: #003d30;
+  --text-muted: #6b7280;
+  --primary-light: #4a9b8a;
+  --primary-dark: #001f19;
+ --primary-gradient: linear-gradient(135deg, #7dd4c0 0%, #3a9b80 30%, #005948 70%, #001f19 100%);
 }
 
-
-/* Theme Biru - Clean & Professional (versi dari gambar) */
 .theme-biru {
-  --primary: #1e56ff;    /* Biru terang */
-  --secondary: #0000cc;  /* Biru tua */
-  --accent: #eae0c8;     /* Krem lembut sebagai aksen */
-  --background: #ffffff; /* Putih bersih */
-  --card-bg: #fff8f8;    /* Putih pucat agar soft */
-  --card-border: #eae0c8;/* Krem lembut untuk border */
-  --text: #0000cc;       /* Biru tua untuk teks utama */
-  --text-muted: #64748b; /* Abu netral tetap */
+  --primary: #1e56ff;
+  --secondary: #0000cc;
+  --accent: #eae0c8;
+  --background: #ffffff;
+  --card-bg: #fff8f8;
+  --card-border: #eae0c8;
+  --text: #0000cc;
+  --text-muted: #64748b;
+  --primary-light: #7c9bff;
+  --primary-dark: #0033cc;
+  --primary-gradient: linear-gradient(135deg, #7c9bff 0%, #4a7aff 25%, #1e56ff 60%, #0044ff 100%);
 }
-
 
 .theme-teal {
-  --primary: #4CBBA0;   /* Teal Soft */
-  --secondary: #A7FFD6; /* Mint Light */
-  --accent: #6278B0;    /* Soft Blue */
+  --primary: #4CBBA0;
+  --secondary: #A7FFD6;
+  --accent: #6278B0;
   --background: #ffffff;
-  --card-bg: #f0fdfa;   /* Background lembut */
+  --card-bg: #f0fdfa;
   --card-border: #d1fae5;
-  --text: #2F2F5F;      /* Navy Dark */
+  --text: #2F2F5F;
   --text-muted: #64748b;
+  --primary-light: #a0ead5;
+  --primary-dark: #2a8d77;
+  --primary-gradient: linear-gradient(135deg, #a0ead5 0%, #6dd9be 25%, #4CBBA0 60%, #38a888 100%);
 }
 
 .theme-maroon {
-  --primary: #640D0D;   /* Deep Maroon */
-  --secondary: #8B1E1E; /* Red Maroon */
-  --accent: #3B0A0A;    /* Dark Maroon */
+  --primary: #640D0D;
+  --secondary: #8B1E1E;
+  --accent: #3B0A0A;
   --background: #ffffff;
-  --card-bg: #FFF1C9;   /* Cream soft */
+  --card-bg: #FFF1C9;
   --card-border: #fcd9b6;
-  --text: #3B0A0A;      /* Dark Maroon */
+  --text: #3B0A0A;
   --text-muted: #6b7280;
+  --primary-light: #b83535;
+  --primary-dark: #3d0707;
+  --primary-gradient: linear-gradient(135deg, #b83535 0%, #9a2323 25%, #7a1616 60%, #640D0D 100%);
 }
-
-
-
-
-/* Theme Ungu - Creative & Modern */
 
 .theme-ungu {
-  --primary: #6d00ff;    /* Ungu terang */
-  --secondary: #2e0066;  /* Ungu tua */
-  --accent: #e5a6ff;     /* Ungu pastel */
-  --background: #ffffff; /* Putih konsisten */
-  --card-bg: #fff0f6;    /* Ungu sangat pucat */
-  --card-border: #e5a6ff;/* Sama seperti pastel agar harmonis */
-  --text: #2e0066;       /* Ungu tua untuk kontras */
-  --text-muted: #6b7280; /* Tetap abu-abu netral */
+  --primary: #6d00ff;
+  --secondary: #2e0066;
+  --accent: #e5a6ff;
+  --background: #ffffff;
+  --card-bg: #fff0f6;
+  --card-border: #e5a6ff;
+  --text: #2e0066;
+  --text-muted: #6b7280;
+  --primary-light: #b366ff;
+  --primary-dark: #4a00b3;
+  --primary-gradient: linear-gradient(135deg, #b366ff 0%, #9333ff 25%, #7d1aff 60%, #6d00ff 100%);
 }
 
-
-/* Theme Oranye - Warm & Energetic */
 .theme-oranye {
-  --primary: #f97316; /* Orange 500 */
-  --secondary: #fb923c; /* Orange 400 */
-  --accent: #fbbf24; /* Amber 400 */
-  --background: #ffffff; /* Pure white - konsisten */
-  --card-bg: #fff7ed; /* Orange 50 untuk card */
-  --card-border: #fed7aa; /* Orange 200 */
-  --text: #9a3412; /* Orange 800 */
+  --primary: #f97316;
+  --secondary: #fb923c;
+  --accent: #fbbf24;
+  --background: #ffffff;
+  --card-bg: #fff7ed;
+  --card-border: #fed7aa;
+  --text: #9a3412;
   --text-muted: #78716c;
+  --primary-light: #ffac70;
+  --primary-dark: #c2590c;
+  --primary-gradient: linear-gradient(135deg, #ffac70 0%, #ff9752 25%, #f97316 60%, #ea6b0f 100%);
+}
+
+.gradient-text {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
